@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tryme.init_code.hyperion.zungu_veterinarios_artes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Solicitar_pago">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".muestra" />
+        <activity android:name=".Agregar_producto" />
+        <activity android:name=".Login" />
+        <activity android:name=".Registro" />
+        <activity android:name=".SlideUno" />
+        <activity android:name=".SlideDos" />
+        <activity android:name=".SlideTres" />
+        <activity android:name=".SlideCuatro" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Principal" />
+        <activity android:name=".Servicios_uno" />
+        <activity android:name=".Servicios" />
+        <activity android:name=".Agregar_servicio" />
+        <activity android:name=".Notificaciones" />
+        <activity android:name=".Agregar_producto_tienda" />
+        <activity android:name=".Anuncios_spei" />
+        <activity android:name=".Anuncios_paypal" />
+        <activity android:name=".anuncios_tarjeta" />
+        <activity android:name=".Clientes" />
+        <activity android:name=".Perfil_cliente" />
+        <activity android:name=".Clientes_contacto" />
+        <activity android:name=".Clientes_opciones"></activity>
+    </application>
+
+</manifest>

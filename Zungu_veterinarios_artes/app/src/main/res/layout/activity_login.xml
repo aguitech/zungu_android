@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Login">
+
+    <LinearLayout
+        android:id="@+id/logo_zungu"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:src="@drawable/logozungu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/logo_zungu"
+        android:id="@+id/tx_registro"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:text="Iniciar sesión"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#4E4E4E"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/tx_registro"
+        android:id="@+id/correo"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="0dp"
+            android:hint="Correo electrónico"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fondo_input"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/icomail"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:paddingRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/correo"
+        android:id="@+id/password"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="0dp"
+            android:hint="Contraseña"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFFFF"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="@color/fondo_input"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/ico_candado"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:paddingRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/password"
+        android:id="@+id/btn_registro"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:textColor="@color/texto_slider"
+            android:textSize="15dp"
+            android:onClick="onLogin"
+            android:background="@drawable/iniciar_sesion"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/btn_registro"
+        android:id="@+id/separador"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/fondo_input"
+            android:layout_weight="0.8">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/btn_registro"
+        android:id="@+id/txt_cuenta"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:gravity="center"
+            android:textColor="@color/cuenta"
+            android:textSize="16dp"
+            android:text="¿Aún no tienes cuenta?"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/txt_cuenta"
+        android:id="@+id/registro"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:text="Regístrate aquí"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:textColor="@color/cuenta"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onClickRegistro"
+            android:id="@+id/btnRegistro" />
+
+    </LinearLayout>
+</RelativeLayout>

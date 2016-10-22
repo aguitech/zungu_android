@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tryme.init_code.hyperion.zungu_veterinarios_artes.muestra">
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/inventario"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Inventario"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+        <!--Comienza el contenido, se pondra Scroll para que las pantallas de adapten-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--Contenido Padre-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <!--Contenido Hijo-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="40dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.40"
+                            android:background="@color/obscuro"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Activos"
+                                android:textColor="@color/blanco"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.40"
+                            android:background="@color/blanco"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Agregar servicio"
+                                android:textColor="@color/obscuro"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Contenido Hijo-->
+
+                </LinearLayout>
+                <!--Termina Contenido Padre-->
+
+            </RelativeLayout>
+        </ScrollView>
+        <!--Termina el contenido-->
+
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Zungu Veterinarios</string>
+    <string name="perfil_prompt">Tipo de perfil</string>
+
+    <string-array name="tipoperfil">
+        <item>Servicios Veterinarios</item>
+        <item>Servicios Pet Friendly</item>
+    </string-array>
+</resources>

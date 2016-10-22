@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOmitir">#FFFFFF</color>
+    <color name="texto_slider">#FFFFFF</color>
+    <color name="verde_texto">#00DC49</color>
+    <color name="fondo_input">#87C848</color>
+    <color name="btn_registro">#00DC49</color>
+    <color name="btn_facebook">#3b5998</color>
+    <color name="cuenta">#4F615F</color>
+    <color name="blanco">#ffffff</color>
+    <color name="btn_email">#87C848</color>
+    <color name="verde_claro">#87C848</color>
+    <color name="btn_datos">#87C848</color>
+    <color name="gris_claro">#949F9D</color>
+    <color name="gris_fuerte">#5D6666</color>
+    <color name="btn_si">#F3F4F2</color>
+    <color name="black">#000000</color>
+</resources>

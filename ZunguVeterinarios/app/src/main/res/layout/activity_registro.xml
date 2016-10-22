@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="init_code.hyperion.zunguveterinarios.Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:background="@drawable/fondozungu">
+
+        <LinearLayout
+            android:id="@+id/logo_zungu"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:src="@drawable/logozungu"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/logo_zungu"
+            android:id="@+id/tx_registro"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:text="Registro"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#4E4E4E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_registro"
+            android:id="@+id/nombre"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:maxLines="1"
+                android:layout_width="0dp"
+                android:hint="Nombre"
+                android:paddingLeft="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/fondo_input"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/nombre"
+            android:id="@+id/correo"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:hint="Correo electrónico"
+                android:paddingLeft="15dp"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/fondo_input"
+                android:inputType="textEmailAddress"
+                android:drawableRight="@drawable/icomail"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/correo"
+            android:id="@+id/password"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="0dp"
+                android:hint="Contraseña"
+                android:paddingLeft="15dp"
+                android:textColorHint="#FFFFFF"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:background="@color/fondo_input"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/ico_candado"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/password"
+            android:id="@+id/cpassword"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtPasswordDos"
+                android:layout_width="0dp"
+                android:hint="Confirmar contraseña"
+                android:paddingLeft="15dp"
+                android:textColorHint="#FFFFFF"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:background="@color/fondo_input"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/ico_candado"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/cpassword"
+            android:id="@+id/tx_selecciona"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:text="Selecciona un perfil"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#4E4E4E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tx_selecciona"
+            android:id="@+id/_selperf"
+            android:weightSum="1"
+            android:onClick="showPerfilList"
+            android:gravity="center"
+            android:background="@color/fondo_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPerfil"
+                android:text="Tipo de perfil"
+                android:textColor="@color/blanco"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textSize="18dp"
+                android:layout_weight="0.80"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:paddingRight="12dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/_selperf"
+            android:id="@+id/_selcategoria"
+            android:weightSum="1"
+            android:onClick="showCategoriaList"
+            android:gravity="center"
+            android:background="@color/fondo_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCategoria"
+                android:text="Categoria"
+                android:textColor="@color/blanco"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:textSize="18dp"
+                android:layout_weight="0.80"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:paddingRight="12dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/_selcategoria"
+            android:id="@+id/btn_registro"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:textColor="@color/texto_slider"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="Registrarse"
+                android:onClick="goRegistro"
+                android:background="@drawable/fondo_input"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/btn_registro"
+            android:id="@+id/separador"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/fondo_input"
+                android:layout_weight="0.8">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/btn_registro"
+            android:id="@+id/txt_cuenta"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/cuenta"
+                android:textSize="16dp"
+                android:text="¿Ya tienes cuenta?"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Inicia Sesion"
+                android:layout_height="match_parent"
+                android:textColor="@color/cuenta"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:onClick="goLogin"
+                android:background="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

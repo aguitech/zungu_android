@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
+    <color name="verde_zungu">#8BCA4F</color>
+    <color name="obscuro">#2B2B2B</color>
+    <color name="gris_fuerte">#535353</color>
+    <color name="gris_claro">#ADADAD</color>
+    <color name="cuenta">#4F615F</color>
+    <color name="fondo_input">#87C848</color>
+    <color name="texto_slider">#FFFFFF</color>
+    <color name="colorOmitir">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="amarillo">#FFE200</color>
+    <color name="rojo">#FF0000</color>
+    <color name="anaranjado">#FFA700</color>
+</resources>
