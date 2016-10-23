@@ -10,12 +10,18 @@
     <color name="btn_registro">#00DC49</color>
     <color name="btn_facebook">#3b5998</color>
     <color name="cuenta">#4F615F</color>
-    <color name="blanco">#ffffff</color>
+    <color name="blanco">#FFFFFF</color>
     <color name="btn_email">#87C848</color>
     <color name="verde_claro">#87C848</color>
     <color name="btn_datos">#87C848</color>
-    <color name="gris_claro">#949F9D</color>
-    <color name="gris_fuerte">#5D6666</color>
+    <color name="gris_claro">#ADADAD</color>
+    <color name="gris_fuerte">#535353</color>
     <color name="btn_si">#F3F4F2</color>
     <color name="black">#000000</color>
+    <color name="negro">#000000</color>
+    <color name="verde_zungu">#8BCA4F</color>
+    <color name="obscuro">#2B2B2B</color>
+    <color name="amarillo">#FFE200</color>
+    <color name="rojo">#FF0000</color>
+    <color name="anaranjado">#FFA700</color>
 </resources>
