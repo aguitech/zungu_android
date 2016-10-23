@@ -164,7 +164,8 @@
                             <EditText
                                 android:layout_width="match_parent"
                                 android:background="@drawable/radius_negro"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/txtNombreServicio" />
 
                         </LinearLayout>
                     </LinearLayout>
@@ -196,7 +197,8 @@
                                 android:hint="$"
                                 android:paddingLeft="10dp"
                                 android:background="@drawable/radius_negro"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/txtCostoServicio" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -276,7 +278,8 @@
                             <EditText
                                 android:layout_width="match_parent"
                                 android:background="@drawable/radius_negro"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/txtDuracionServicio" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -307,7 +310,7 @@
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
                             <EditText
-                                android:id="@+id/EditText02"
+                                android:id="@+id/txtDescripcionServicio"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/radius_negro"
@@ -342,7 +345,8 @@
                             <EditText
                                 android:layout_width="match_parent"
                                 android:background="@drawable/radius_negro"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/txtCapacidadServicio" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -371,7 +375,8 @@
                                 android:textColor="@color/gris_fuerte"
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/btnAgregar" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -386,7 +391,8 @@
                                 android:textColor="@color/gris_fuerte"
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/btnCancelar" />
                         </LinearLayout>
                     </LinearLayout>
 
