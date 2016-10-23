@@ -141,7 +141,7 @@
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/circleImage"/>
+                    android:src="@drawable/circle_image"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -221,7 +221,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="@drawable/bgCitas">
+                android:background="@drawable/bg_citas">
                 <ImageView
                     android:paddingLeft="16dp"
                     android:layout_width="wrap_content"
