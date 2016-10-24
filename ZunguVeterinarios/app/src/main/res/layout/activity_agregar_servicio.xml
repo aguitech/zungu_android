@@ -376,7 +376,8 @@
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
                                 android:layout_height="30dp"
-                                android:id="@+id/btnAgregar" />
+                                android:id="@+id/btnAgregar"
+                                android:onClick="agregarServicio" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
