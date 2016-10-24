@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 //Intent i = new Intent(MainActivity.this, SlideUno.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
-                Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
+                //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
+
+                Intent i = new Intent(MainActivity.this, Servicios.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 
