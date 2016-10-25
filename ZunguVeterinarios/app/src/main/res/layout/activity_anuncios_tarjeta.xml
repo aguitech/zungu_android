@@ -171,7 +171,7 @@
                     android:background="@drawable/border_gris"
                     android:inputType="text"
                     android:paddingLeft="10dp"
-                    />
+                    android:id="@+id/txtNombreTarjeta" />
             </LinearLayout>
 
             <LinearLayout
@@ -192,7 +192,7 @@
                     android:background="@drawable/border_gris"
                     android:inputType="text"
                     android:paddingLeft="10dp"
-                    />
+                    android:id="@+id/txtNumeroTarjeta" />
             </LinearLayout>
 
             <LinearLayout
@@ -213,7 +213,7 @@
                     android:background="@drawable/border_gris"
                     android:inputType="text"
                     android:paddingLeft="10dp"
-                    />
+                    android:id="@+id/txtCantidadPago" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -226,7 +226,8 @@
                     android:layout_height="40dp"
                     android:background="@drawable/border_gris"
                     android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp" />
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtEmail" />
 
             </LinearLayout>
 
@@ -247,7 +248,7 @@
                     android:background="@drawable/border_gris"
                     android:inputType="text"
                     android:paddingLeft="10dp"
-                    />
+                    android:id="@+id/txtCvvTarjeta" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -259,7 +260,8 @@
                     android:layout_height="40dp"
                     android:background="@drawable/border_gris"
                     android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp" />
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtMesTarjeta" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -271,7 +273,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/border_gris"
                     android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp" />
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtAnioTarjeta" />
 
             </LinearLayout>
 
@@ -292,7 +295,7 @@
                     android:background="@drawable/border_gris"
                     android:inputType="text"
                     android:paddingLeft="10dp"
-                    />
+                    android:id="@+id/txtPais" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -304,7 +307,8 @@
                     android:layout_height="40dp"
                     android:background="@drawable/border_gris"
                     android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp" />
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtEstado" />
 
                 <EditText
                     android:layout_width="0dp"
@@ -316,7 +320,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/border_gris"
                     android:inputType="textEmailAddress"
-                    android:paddingLeft="10dp" />
+                    android:paddingLeft="10dp"
+                    android:id="@+id/txtCodigoPostal" />
 
             </LinearLayout>
 
@@ -349,7 +354,9 @@
                 android:textAllCaps="false"
                 android:textSize="12dp"
                 android:background="@drawable/border_verde_radius"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:id="@+id/btnAgregarTarjeta"
+                android:onClick="agregarPagoTarjeta"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"

@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
 
                 //Intent i = new Intent(MainActivity.this, Servicios.class);
-                Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
+                //Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
+                Intent i = new Intent(MainActivity.this, Anuncios_tarjeta.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 

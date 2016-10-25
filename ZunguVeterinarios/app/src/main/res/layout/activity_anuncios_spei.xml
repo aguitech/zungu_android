@@ -153,7 +153,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtPais" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -165,7 +165,8 @@
                             android:layout_height="40dp"
                             android:background="@drawable/border_gris"
                             android:inputType="textEmailAddress"
-                            android:paddingLeft="10dp" />
+                            android:paddingLeft="10dp"
+                            android:id="@+id/txtEstado" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -177,7 +178,8 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/border_gris"
                             android:inputType="textEmailAddress"
-                            android:paddingLeft="10dp" />
+                            android:paddingLeft="10dp"
+                            android:id="@+id/txtCodigoPostal" />
 
                     </LinearLayout>
 
@@ -200,7 +202,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtNumeroSpei" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -220,7 +222,8 @@
                             android:background="@drawable/border_verde_radius"
                             android:layout_height="match_parent"
                             android:layout_weight="0.35"
-                            />
+                            android:onClick="agregarPagoSPEI"
+                            android:id="@+id/btnGuardar" />
 
                     </LinearLayout>
 
