@@ -119,6 +119,32 @@ public class Anuncios_tarjeta extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
 
                 showMsg("Se ha agregado la tarjeta.");
+
+                EditText txtNombreTarjeta = (EditText)findViewById(R.id.txtNombreTarjeta);
+                EditText txtNumeroTarjeta = (EditText)findViewById(R.id.txtNumeroTarjeta);
+                EditText txtCantidadPago = (EditText)findViewById(R.id.txtCantidadPago);
+                EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
+
+                EditText txtCvvTarjeta = (EditText)findViewById(R.id.txtCvvTarjeta);
+                EditText txtMesTarjeta = (EditText)findViewById(R.id.txtMesTarjeta);
+                EditText txtAnioTarjeta = (EditText)findViewById(R.id.txtAnioTarjeta);
+
+
+                EditText txtPais = (EditText)findViewById(R.id.txtPais);
+                EditText txtEstado = (EditText)findViewById(R.id.txtEstado);
+                EditText txtCodigoPostal = (EditText)findViewById(R.id.txtCodigoPostal);
+
+                txtNombreTarjeta.setText("");
+                txtNumeroTarjeta.setText("");
+                txtCantidadPago.setText("");
+                txtEmail.setText("");
+                txtCvvTarjeta.setText("");
+                txtMesTarjeta.setText("");
+                txtAnioTarjeta.setText("");
+                txtPais.setText("");
+                txtEstado.setText("");
+                txtCodigoPostal.setText("");
+
                 /*
                 try {
 
