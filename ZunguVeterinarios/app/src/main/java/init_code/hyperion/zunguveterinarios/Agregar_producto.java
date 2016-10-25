@@ -15,55 +15,54 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Anuncios_spei extends AppCompatActivity {
+public class Agregar_producto extends AppCompatActivity {
 
     private String _url;
     public static final String idu = "idu";
     SharedPreferences sharedpreferences;
-    public static final String MyPREFERENCES = "MyPrefs" ;
+    public static final String MyPREFERENCES = "MyPrefs";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anuncios_spei);
+        setContentView(R.layout.activity_agregar_producto);
+
+        //btnAgregar.setOnClickListener();
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+
     }
 
-    public void agregarPagoSPEI(View view) {
+    public void agregarProducto(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
         EditText txtPass = (EditText)findViewById(R.id.txtPassword);
 */
 
 
-        EditText txtPais = (EditText)findViewById(R.id.txtPais);
-        EditText txtEstado = (EditText)findViewById(R.id.txtEstado);
-        EditText txtCodigoPostal = (EditText)findViewById(R.id.txtCodigoPostal);
-        EditText txtNumeroSpei = (EditText)findViewById(R.id.txtNumeroSpei);
+        EditText txtNombreProducto = (EditText) findViewById(R.id.txtNombreProducto);
+        EditText txtNumeroUnidades = (EditText) findViewById(R.id.txtNumeroUnidades);
+        EditText txtPrecioCompra = (EditText) findViewById(R.id.txtPrecioCompra);
+        EditText txtPrecioVenta = (EditText) findViewById(R.id.txtPrecioVenta);
+        EditText txtDescripcionProducto = (EditText) findViewById(R.id.txtDescripcionProducto);
 
+        
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
-        if(txtPais.getText().toString().length() < 1 || txtEstado.getText().toString().length() < 1){
+        //if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
+        if (txtNombreProducto.getText().toString().length() < 1 || txtNumeroUnidades.getText().toString().length() < 1) {
             showMsg("Usuario o password no válido.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
-            /**
-             private EditText txtNombreServicio;
-             private EditText txtCostoServicio;
-             private EditText txtDuracionServicio;
-             private EditText txtDescripcionServicio;
-             private EditText txtCapacidadServicio;
-             * */
+
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
-            //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_servicio.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_spei.php?pais="+ txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&numero_spei=" + txtNumeroSpei.getText().toString() + "&id_veterinario=1";
-            //new Agregar_servicio.RetrieveFeedTask().execute();
-            new Anuncios_spei.RetrieveFeedTask().execute();
+            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_producto.php?nombre=" + txtNombreProducto.getText().toString() + "&numero_unidades=" + txtNumeroUnidades.getText().toString() + "&precio_compra=" + txtPrecioCompra.getText().toString() + "&precio_venta=" + txtPrecioVenta.getText().toString() + "&descripcion=" + txtDescripcionProducto.getText().toString() + "&id_veterinario=1";
+            new Agregar_producto.RetrieveFeedTask().execute();
         }
+
     }
-    private void showMsg(CharSequence text){
+    private void showMsg(CharSequence text) {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
 
@@ -92,35 +91,21 @@ public class Anuncios_spei extends AppCompatActivity {
                     }
                     bufferedReader.close();
                     return stringBuilder.toString();
-                }
-                finally{
+                } finally {
                     urlConnection.disconnect();
                 }
-            }
-            catch(Exception e) {
+            } catch (Exception e) {
                 Log.e("ERROR", e.getMessage(), e);
                 return null;
             }
         }
 
         protected void onPostExecute(String response) {
-            if(response == null) {
+            if (response == null) {
                 response = "THERE WAS AN ERROR";
             } else {
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
-
-                showMsg("Se ha agregado SPEI.");
-
-                EditText txtPais = (EditText)findViewById(R.id.txtPais);
-                EditText txtEstado = (EditText)findViewById(R.id.txtEstado);
-                EditText txtCodigoPostal = (EditText)findViewById(R.id.txtCodigoPostal);
-                EditText txtNumeroSpei = (EditText)findViewById(R.id.txtNumeroSpei);
-
-                txtPais.setText("");
-                txtEstado.setText("");
-                txtCodigoPostal.setText("");
-                txtNumeroSpei.setText("");
 
                 /*
                 try {
@@ -152,4 +137,6 @@ public class Anuncios_spei extends AppCompatActivity {
             Log.i("INFO", response);
         }
     }
+
+
 }

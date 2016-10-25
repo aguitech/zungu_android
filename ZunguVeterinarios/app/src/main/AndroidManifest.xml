@@ -43,6 +43,9 @@
         <activity android:name=".Anuncios_paypal" />
         <activity android:name=".Anuncios_spei" />
         <activity android:name=".Anuncios_tarjeta" />
+        <activity android:name=".Agregar_producto" />
+        <activity android:name=".Editar_producto" />
+
     </application>
 
 </manifest>
