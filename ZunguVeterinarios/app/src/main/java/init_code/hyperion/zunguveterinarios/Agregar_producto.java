@@ -47,7 +47,7 @@ public class Agregar_producto extends AppCompatActivity {
         EditText txtPrecioVenta = (EditText) findViewById(R.id.txtPrecioVenta);
         EditText txtDescripcionProducto = (EditText) findViewById(R.id.txtDescripcionProducto);
 
-        
+
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         //if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
