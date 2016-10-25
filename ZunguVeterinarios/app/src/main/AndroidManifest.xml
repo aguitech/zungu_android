@@ -40,6 +40,9 @@
         <activity android:name=".Principal"></activity>
         <activity android:name=".Servicios" />
         <activity android:name=".Agregar_servicio" />
+        <activity android:name=".Anuncios_paypal" />
+        <activity android:name=".Anuncios_spei" />
+        <activity android:name=".Anuncios_tarjeta" />
     </application>
 
 </manifest>

@@ -33,7 +33,6 @@ class Servicios extends AppCompatActivity implements LoadJSONTask.Listener, Adap
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //mListView = (ListView) findViewById(R.id.list_view);
         mListView = (ListView) findViewById(R.id.lista_servicios);
         mListView.setOnItemClickListener(this);
         new LoadJSONTask(this).execute(URL);
