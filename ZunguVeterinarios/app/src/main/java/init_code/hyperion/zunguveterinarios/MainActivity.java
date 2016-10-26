@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Agregar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Editar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Cliente_solicitar_pago.class);
-                Intent i = new Intent(MainActivity.this, Cliente_perfil.class);
+                //Intent i = new Intent(MainActivity.this, Cliente_perfil.class);
+                Intent i = new Intent(MainActivity.this, Anuncios_paypal.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 

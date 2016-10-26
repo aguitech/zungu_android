@@ -170,7 +170,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtNombre" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -191,7 +191,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtApellido" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -211,7 +211,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtPais" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -223,7 +223,8 @@
                             android:layout_height="40dp"
                             android:background="@drawable/border_gris"
                             android:inputType="textEmailAddress"
-                            android:paddingLeft="10dp" />
+                            android:paddingLeft="10dp"
+                            android:id="@+id/txtEstado" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -235,7 +236,8 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/border_gris"
                             android:inputType="textEmailAddress"
-                            android:paddingLeft="10dp" />
+                            android:paddingLeft="10dp"
+                            android:id="@+id/txtCodigoPostal" />
 
                     </LinearLayout>
 
@@ -257,7 +259,7 @@
                             android:background="@drawable/border_gris"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtCantidad" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -270,7 +272,8 @@
                             android:layout_height="40dp"
                             android:background="@drawable/border_gris"
                             android:inputType="textEmailAddress"
-                            android:paddingLeft="10dp" />
+                            android:paddingLeft="10dp"
+                            android:id="@+id/txtEmail" />
 
                     </LinearLayout>
 
@@ -303,7 +306,9 @@
                 android:textAllCaps="false"
                 android:textSize="12dp"
                 android:background="@drawable/border_verde_radius"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:id="@+id/btnAgregarPapal"
+                android:onClick="agregarPagoPaypal" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
