@@ -126,6 +126,7 @@ public class Editar_servicio extends AppCompatActivity {
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
 
+                showMsg("Se ha actualizado la información");
             }
             Log.i("INFO", response);
         }

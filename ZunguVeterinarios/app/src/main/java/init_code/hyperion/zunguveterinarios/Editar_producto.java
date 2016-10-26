@@ -112,6 +112,7 @@ public class Editar_producto extends AppCompatActivity {
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
 
+                showMsg("Se ha actualizado la información");
                 /*
                 try {
 
@@ -195,8 +196,8 @@ public class Editar_producto extends AppCompatActivity {
                     //CharSequence text;
 
 
-                    showMsg(response);
-                    showMsg(object.getString("descripcion"));
+                    //showMsg(response);
+                    //showMsg(object.getString("descripcion"));
 
                     txtNombreProducto.setText(object.getString("nombre"));
                     txtNumeroUnidades.setText(object.getString("numero_unidades"));
@@ -219,11 +220,11 @@ public class Editar_producto extends AppCompatActivity {
 
 
 
-                showMsg(response);
+                //showMsg(response);
 
-                showMsg("Respuesta");
+                //showMsg("Respuesta");
 
-                showMsg(response);
+                //showMsg(response);
 
                 //showMsg(response.getString("descripcion"));
                 //showMsg(response.getString("descripcion"));
