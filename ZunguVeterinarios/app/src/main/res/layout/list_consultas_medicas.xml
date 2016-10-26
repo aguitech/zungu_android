@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border_verde_radius"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.70"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/calendar_"
+                        android:drawablePadding="@dimen/txtDrwblPadding"
+                        android:text="15 / jun / 2016"
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/reloj_"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="@dimen/txtDrwblPadding"
+                        android:text="20:00 - 21:00 hrs"
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/puntero"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="@dimen/txtDrwblPadding"
+                        android:text="Zootecnia, S.C."
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.70"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Motivo: Revisión"
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Diagnósito: Normal"
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Desparacitación próxima cita"
+                        android:textSize="12dp"
+                        android:textColor="@color/obscuro"
+                        android:gravity="left|center"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

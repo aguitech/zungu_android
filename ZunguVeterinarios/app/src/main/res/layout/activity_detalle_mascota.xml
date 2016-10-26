@@ -4,7 +4,7 @@
     android:id="@+id/activity_detalle_mascota"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@color/blanco"
     tools:context="init_code.hyperion.zunguveterinarios.Detalle_mascota">
 
     <!--Comienza el contenedor padre-->
@@ -304,6 +304,46 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Citas pendientes"
+                                android:drawableLeft="@drawable/bullet_"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <ListView
+                                android:id="@+id/citaspendientes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
                         android:gravity="center"
                         android:layout_height="wrap_content">
                         <LinearLayout
@@ -313,13 +353,406 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:text="Antecedentes"
-                                android:drawableLeft="@drawable/bullet"
+                                android:drawableLeft="@drawable/bullet_"
                                 android:textSize="12dp"
                                 android:drawablePadding="@dimen/txtDrwblPadding"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.65"
+                            android:layout_height="wrap_content">
+                            <ListView
+                                android:id="@+id/antecedentes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </ListView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Agregar"
+                                android:textAllCaps="false"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:drawableLeft="@drawable/agregar_"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/obscuro"
+                                android:background="@android:color/transparent"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Consultas Médicas"
+                                android:drawableLeft="@drawable/bullet_"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <ListView
+                                android:id="@+id/consultasmedicas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.65"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Agregar"
+                                android:textAllCaps="false"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:drawableLeft="@drawable/agregar_"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/obscuro"
+                                android:background="@android:color/transparent"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Vacunas"
+                                android:drawableLeft="@drawable/bullet_"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Trivalente"
+                                android:textColor="@color/blanco"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Rabia"
+                                android:textColor="@color/blanco"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Hepatitis"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:background="@color/gris_claro"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.22"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Exámenes Médicos"
+                                android:drawableLeft="@drawable/bullet_"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.60"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="@string/sin_examen_medico"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.65"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.25"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Agregar"
+                                android:textAllCaps="false"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:drawableLeft="@drawable/agregar_"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/obscuro"
+                                android:background="@android:color/transparent"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Observaciones Médicas"
+                                android:drawableLeft="@drawable/bullet_"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Ninguna"
+                                android:textSize="10dp"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:text="Generar código"
+                                android:textAllCaps="false"
+                                android:textColor="@color/obscuro"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/border_verde_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
 
                 </LinearLayout>
             </RelativeLayout>
