@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Servicios.class);
                 //Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_producto.class);
-                Intent i = new Intent(MainActivity.this, Editar_producto.class);
+                Intent i = new Intent(MainActivity.this, Editar_servicio.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 
