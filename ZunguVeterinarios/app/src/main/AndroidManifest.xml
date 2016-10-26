@@ -47,6 +47,9 @@
         <activity android:name=".Editar_producto" />
         <activity android:name=".Editar_servicio" />
 
+        <activity android:name=".Cliente_perfil" />
+        <activity android:name=".Cliente_solicitar_pago" />
+
     </application>
 
 </manifest>
