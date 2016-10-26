@@ -37,7 +37,7 @@
         <activity
             android:name=".Registro"
             android:screenOrientation="portrait" />
-        <activity android:name=".Principal"></activity>
+        <activity android:name=".Principal" />
         <activity android:name=".Servicios" />
         <activity android:name=".Agregar_servicio" />
         <activity android:name=".Anuncios_paypal" />
@@ -46,10 +46,9 @@
         <activity android:name=".Agregar_producto" />
         <activity android:name=".Editar_producto" />
         <activity android:name=".Editar_servicio" />
-
         <activity android:name=".Cliente_perfil" />
         <activity android:name=".Cliente_solicitar_pago" />
-
+        <activity android:name=".Mascotas"></activity>
     </application>
 
 </manifest>
