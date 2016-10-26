@@ -138,7 +138,8 @@
                                     android:textStyle="bold"
                                     android:textSize="15dp"
                                     android:textColor="@color/gris_fuerte"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/lblNombre" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -165,7 +166,8 @@
                                         android:layout_width="match_parent"
                                         android:text="correo@mail.com"
                                         android:paddingLeft="5dp"
-                                        android:layout_height="match_parent" />
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/lblEmail" />
                                 </LinearLayout>
                             </LinearLayout>
 
@@ -193,7 +195,8 @@
                                         android:layout_width="match_parent"
                                         android:text="044 55 2533 3955"
                                         android:paddingLeft="5dp"
-                                        android:layout_height="match_parent" />
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/lblTelefono" />
                                 </LinearLayout>
                             </LinearLayout>
 
