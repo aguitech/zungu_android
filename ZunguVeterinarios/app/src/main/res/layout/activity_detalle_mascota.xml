@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detalle_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="init_code.hyperion.zunguveterinarios.Detalle_mascota">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/mascotas"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mascotas"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+
+        <!--Contenido Hijo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Mis mascotas"
+                    android:textSize="12dp"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/tab_negro"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Adopción"
+                    android:textSize="12dp"
+                    android:textColor="@color/obscuro"
+                    android:background="@drawable/tab_border_obscuro"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--Termina Contenido Hijo-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.40"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/mascota_perro"
+                                android:layout_height="90dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.60"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Nombre / Macho"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="6 meses"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="Raza  2.300 kg  Café"
+                                android:textColor="@color/obscuro"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="3 heats  S.P : Ojos color azúl"
+                                android:textColor="@color/obscuro"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="ID: 99976"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Separador-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_fuerte"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Familia"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <ListView
+                                android:id="@+id/familiares"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Separador-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/historial"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_fuerte"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Expediente"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp">
+                            <TextView
+                                android:text="Nuevas Citas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Antecedentes"
+                                android:drawableLeft="@drawable/bullet"
+                                android:textSize="12dp"
+                                android:drawablePadding="@dimen/txtDrwblPadding"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+<!--Termina Contenido Hijo-->
+
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+
+</RelativeLayout>
