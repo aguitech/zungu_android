@@ -110,7 +110,7 @@
                         android:weightSum="1"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:layout_height="40dp">
+                        android:layout_height="30dp">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_weight="0.40"
@@ -133,6 +133,7 @@
                             <Button
                                 android:layout_width="match_parent"
                                 android:text="Agregar producto"
+                                android:textSize="12dp"
                                 android:textColor="@color/blanco"
                                 android:background="@drawable/tab_negro_derecho"
                                 android:textAllCaps="false"
@@ -155,7 +156,7 @@
                                 android:layout_width="wrap_content"
                                 android:textColor="@color/gris_fuerte"
                                 android:textStyle="bold"
-                                android:textSize="20dp"
+                                android:textSize="15dp"
                                 android:text="Agregar producto"
                                 android:layout_height="wrap_content" />
                             <!--Separador-->
@@ -183,7 +184,7 @@
                             <ImageView
                                 android:src="@drawable/empty_image"
                                 android:layout_width="match_parent"
-                                android:layout_height="170dp" />
+                                android:layout_height="100dp" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -193,13 +194,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:textColor="@color/gris_fuerte"
-                                android:textSize="18dp"
+                                android:textSize="12dp"
                                 android:text="Subir imagen"
                                 android:layout_height="wrap_content" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:textColor="@color/gris_claro"
-                                android:textSize="18dp"
+                                android:textSize="12dp"
                                 android:text="Recomendado: 300x300px"
                                 android:layout_height="wrap_content" />
                         </LinearLayout>
@@ -223,12 +224,14 @@
                                 android:layout_width="match_parent"
                                 android:text="Nombre de producto:"
                                 android:paddingBottom="2dp"
+                                android:textSize="12dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
                             <EditText
                                 android:layout_width="match_parent"
                                 android:background="@drawable/radius_negro"
                                 android:layout_height="30dp"
+                                android:textSize="12dp"
                                 android:id="@+id/txtNombreProducto" />
 
                         </LinearLayout>
@@ -251,6 +254,7 @@
                                 android:layout_width="match_parent"
                                 android:text="Número de unidades:"
                                 android:gravity="left"
+                                android:textSize="12dp"
                                 android:paddingBottom="2dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
@@ -258,6 +262,7 @@
                                 android:layout_width="match_parent"
                                 android:background="@drawable/radius_negro"
                                 android:layout_height="30dp"
+                                android:textSize="12dp"
                                 android:id="@+id/txtNumeroUnidades" />
                         </LinearLayout>
                         <LinearLayout
@@ -286,6 +291,7 @@
                                 android:layout_width="match_parent"
                                 android:text="Precio (Compra):"
                                 android:gravity="left"
+                                android:textSize="12dp"
                                 android:paddingBottom="2dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
@@ -293,6 +299,7 @@
                                 android:layout_width="match_parent"
                                 android:hint="$"
                                 android:paddingLeft="10dp"
+                                android:textSize="12dp"
                                 android:background="@drawable/radius_negro"
                                 android:layout_height="30dp"
                                 android:id="@+id/txtPrecioCompra" />
@@ -308,12 +315,14 @@
                                 android:layout_width="match_parent"
                                 android:text="Precio (Venta):"
                                 android:gravity="left"
+                                android:textSize="12dp"
                                 android:paddingBottom="2dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
                             <EditText
                                 android:layout_width="match_parent"
                                 android:hint="$"
+                                android:textSize="12dp"
                                 android:paddingLeft="10dp"
                                 android:background="@drawable/radius_negro"
                                 android:layout_height="30dp"
@@ -337,8 +346,9 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:text="Mostrar este producto en tienda:"
-                                android:gravity="center"
+                                android:gravity="left|center"
                                 android:paddingBottom="2dp"
+                                android:textSize="12dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content" />
                         </LinearLayout>
@@ -371,6 +381,7 @@
                                 android:layout_width="match_parent"
                                 android:text="Descripción:"
                                 android:paddingBottom="2dp"
+                                android:textSize="12dp"
                                 android:textColor="@color/obscuro"
                                 android:layout_height="wrap_content"
                                  />
@@ -380,6 +391,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/radius_negro"
                                 android:lines="5"
+                                android:textSize="12dp"
                                 android:gravity="top|left"
                                 android:inputType="textMultiLine" />
 
@@ -390,6 +402,7 @@
                         android:layout_width="match_parent"
                         android:weightSum="1"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
                         android:gravity="center"
                         android:layout_height="wrap_content">
@@ -406,6 +419,7 @@
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
                                 android:layout_height="30dp"
+                                android:textSize="12dp"
                                 android:id="@+id/btnAgregarProducto"
                                 android:onClick="agregarProducto" />
                         </LinearLayout>
@@ -421,6 +435,7 @@
                                 android:text="Cancelar"
                                 android:textColor="@color/gris_fuerte"
                                 android:textAllCaps="false"
+                                android:textSize="12dp"
                                 android:background="@drawable/border_verde_radius"
                                 android:layout_height="30dp" />
                         </LinearLayout>
