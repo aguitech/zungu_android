@@ -133,6 +133,7 @@ public class Cambiar_contrasena extends AppCompatActivity {
 
                     JSONObject object = (JSONObject) new JSONTokener(response).nextValue();
 
+                    showMsg("Se ha actualizado la contraseña.");
 /*
                     EditText txtNombre = (EditText) findViewById(R.id.txtNombre);
                     EditText txtDireccion = (EditText) findViewById(R.id.txtDireccion);
