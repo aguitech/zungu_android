@@ -55,6 +55,9 @@
         <activity android:name=".Adopcion_imagenes" />
         <activity android:name=".Agregar_ms_adopcion" />
         <activity android:name=".Registrar_mascota" />
+        <activity android:name=".Editar_establecimiento" />
+        <activity android:name=".Preview_establecimiento" />
+        <activity android:name=".Cuenta"></activity>
     </application>
 
 </manifest>
