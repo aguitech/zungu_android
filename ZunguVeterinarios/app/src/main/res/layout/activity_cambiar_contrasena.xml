@@ -159,12 +159,12 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
                                     android:hint="Contraseña actual"
-                                    android:textColor="@color/blanco"
+                                    android:textColor="@color/black"
                                     android:background="@drawable/border_negro_radius"
                                     android:inputType="textPassword"
                                     android:textSize="12dp"
                                     android:paddingLeft="10dp"
-                                    />
+                                    android:id="@+id/txtContraseniaActual" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -188,12 +188,12 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
                                     android:hint="Nueva contraseña"
-                                    android:textColor="@color/blanco"
+                                    android:textColor="@color/black"
                                     android:background="@drawable/border_negro_radius"
                                     android:inputType="textPassword"
                                     android:textSize="12dp"
                                     android:paddingLeft="10dp"
-                                    />
+                                    android:id="@+id/txtNuevaContrasenia" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -204,12 +204,12 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="30dp"
                                     android:hint="Repetir nueva contraseña"
-                                    android:textColor="@color/blanco"
+                                    android:textColor="@color/black"
                                     android:background="@drawable/border_negro_radius"
                                     android:inputType="textPassword"
                                     android:textSize="12dp"
                                     android:paddingLeft="10dp"
-                                    />
+                                    android:id="@+id/txtRepetirContrasenia" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -237,7 +237,9 @@
                                     android:textColor="@color/blanco"
                                     android:textSize="12dp"
                                     android:background="@drawable/btn_verde_radius"
-                                    android:layout_height="wrap_content" />
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnCambiarContrasenia"
+                                    android:onClick="cambiarContrasenia" />
                             </LinearLayout>
 
                             <LinearLayout
