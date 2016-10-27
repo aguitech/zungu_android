@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_promocionar_perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Pormocionar_producto">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/anuncios"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Anuncios"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+
+        <!--Contenido Hijo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Promocionar"
+                    android:textSize="12dp"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/tab_negro"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Activos"
+                    android:textSize="12dp"
+                    android:textColor="@color/obscuro"
+                    android:background="@drawable/tab_border_obscuro"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/verde_zungu"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="PROMOCIONAR PRODUCTO
+O SERVICIO"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+
+
+
+
+                    <!--aqui va el codigo de la foto-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.50"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/empty_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.50"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_fuerte"
+                                android:textSize="12dp"
+                                android:text="Subir imagen"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_claro"
+                                android:textSize="12dp"
+                                android:text="Recomendado: 300x300px"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina aqui va el codigo de la foto-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="vertical"
+                            android:focusableInTouchMode="true"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Nombre de producto o servicio:"
+                                android:paddingBottom="2dp"
+                                android:textSize="12dp"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:background="@drawable/radius_negro"
+                                android:layout_height="30dp"
+                                android:textSize="12dp"
+                                android:id="@+id/txtNombreProducto" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.45"
+                            android:orientation="vertical"
+                            android:focusableInTouchMode="true"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Precio:"
+                                android:gravity="left"
+                                android:textSize="12dp"
+                                android:paddingBottom="2dp"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:background="@drawable/radius_negro"
+                                android:layout_height="30dp"
+                                android:hint="$"
+                                android:paddingLeft="10dp"
+                                android:textSize="12dp"
+                                android:id="@+id/txtNumeroUnidades" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.45"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Descripción de la promoción:"
+                                android:paddingBottom="2dp"
+                                android:textSize="12dp"
+                                android:textColor="@color/obscuro"
+                                android:layout_height="wrap_content"
+                                />
+                            <EditText
+                                android:id="@+id/txtDescripcionProducto"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radius_negro"
+                                android:lines="5"
+                                android:textSize="12dp"
+                                android:gravity="top|left"
+                                android:inputType="textMultiLine" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                    <!--Bloque uno-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/promo_perfil"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.60"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Nombre del veterinario"
+                                    android:textStyle="bold"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Ciudad de México"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="10dp"
+                                        android:src="@drawable/emailico"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.90"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:text="correo@mail.com"
+                                        android:paddingLeft="5dp"
+                                        android:textSize="10dp"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/lblEmail" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="8dp"
+                                        android:src="@drawable/celico"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.90"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:textSize="10dp"
+                                        android:text="044 55 2533 3955"
+                                        android:gravity="left|center"
+                                        android:paddingLeft="5dp"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/lblTelefono" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--Termina Bloque uno-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.45"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Ubicación"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.45"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_claro"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Más de 1.0 km"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+
+                    <!--Aqui va el mapa-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="100dp">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Aqui termina el mapa-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Personas con mascotas:"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Perros"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Gatos"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Roedores"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Insectos"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Aves"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Reptiles"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Peces"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Otros"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/gris_claro"
+                            android:layout_height="30dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Todos"
+                                android:gravity="center"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Presupuesto diario"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_claro"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Divisa"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Peso mexicano (MXN)"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="$20" />
+                                <TextView
+                                    android:text="Clientes estimados: 1-2"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates_dos"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="$40" />
+                                <TextView
+                                    android:text="Clientes estimados: 3-5"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates_tres"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="$60" />
+                                <TextView
+                                    android:text="Clientes estimados: 6-9"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates_cuatro"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="$100" />
+                                <TextView
+                                    android:text="Clientes estimados: 10-14"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates_cinco"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="$200" />
+                                <TextView
+                                    android:text="Clientes estimados: 15-20"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_pirates_seis"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Elige otro importe" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Calendario"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_dias"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="7 días" />
+                                <TextView
+                                    android:text="Finaliza el 06/07/2016"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_dias_dos"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="14 días" />
+                                <TextView
+                                    android:text="Finaliza el 13/07/2016"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_dias_tres"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="28 días" />
+                                <TextView
+                                    android:text="Finaliza el 27/07/2016"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="left|center"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    android:id="@+id/radio_dias_cuatro"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Publicar hasta" />
+                                <TextView
+                                    android:text="27/07/2016"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.50"
+                                    android:textColor="@color/verde_zungu"
+                                    android:textSize="12dp"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:background="@color/gris_claro"
+                                android:layout_height="1dp">
+                            </LinearLayout>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:background="@color/verde_zungu"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:textColor="@color/blanco"
+                                android:textSize="12dp"
+                                android:text="Tu anuncio estará en circulación durante 28 días con un presupuesto diario de $60.00"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Método de pago "
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/obscuro"
+                                android:paddingLeft="5dp"
+                                android:textSize="12dp"
+                                android:text="Nombre del veterinario"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_claro"
+                                android:paddingLeft="5dp"
+                                android:textSize="12dp"
+                                android:text="Método de pago: Ninguno"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:background="@color/gris_fuerte"
+                                android:textColor="@color/blanco"
+                                android:text="Agregar método de pago"
+                                android:textSize="12dp"
+                                android:textAllCaps="false"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:background="@color/gris_claro"
+                        android:layout_height="1dp">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:background="@drawable/border_verde_radius"
+                                android:textColor="@color/obscuro"
+                                android:text="Promocionar por $60.00 al día"
+                                android:textSize="12dp"
+                                android:textAllCaps="false"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:background="@drawable/border_verde_radius"
+                                android:textColor="@color/obscuro"
+                                android:text="Cancelar"
+                                android:textSize="12dp"
+                                android:textAllCaps="false"
+                                android:layout_height="25dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <!--Termina Contenido Hijo-->
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+
+
+</RelativeLayout>

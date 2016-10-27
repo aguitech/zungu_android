@@ -60,7 +60,12 @@
         <activity android:name=".Cuenta_suscripcion" />
         <activity android:name=".Cambiar_contrasena" />
         <activity android:name=".Eliminar_cuenta" />
-        <activity android:name=".Politicas_de_privacidad"></activity>
+        <activity android:name=".Politicas_de_privacidad" />
+        <activity android:name=".Anuncios" />
+        <activity android:name=".Promocionar_perfil" />
+        <activity android:name=".Pormocionar_producto" />
+        <activity android:name=".Metodos_de_pago" />
+        <activity android:name=".Anuncios_activos"></activity>
     </application>
 
 </manifest>

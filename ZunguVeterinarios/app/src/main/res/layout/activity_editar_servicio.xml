@@ -68,7 +68,7 @@
                 android:gravity="center"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:src="@drawable/servicios"
+                    android:src="@drawable/servicio"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content" />
                 <TextView
@@ -110,7 +110,7 @@
                         android:weightSum="1"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:layout_height="40dp">
+                        android:layout_height="30dp">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_weight="0.40"
@@ -133,6 +133,7 @@
                             <Button
                                 android:layout_width="match_parent"
                                 android:text="Agregar servicio"
+                                android:textSize="12dp"
                                 android:textColor="@color/blanco"
                                 android:background="@drawable/tab_negro_derecho"
                                 android:textAllCaps="false"

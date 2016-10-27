@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_metodos_de_pago"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Metodos_de_pago">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/anuncios"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Anuncios"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+
+        <!--Contenido Hijo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/verde_zungu"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp"
+                    android:text="MÉTODOS DE PAGO"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".90"
+                android:background="@color/verde_zungu"
+                android:layout_height="1dp"></LinearLayout>
+        </LinearLayout>
+        <!--Termina Separador-->
+
+        <!--Termina Contenido Hijo-->
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.70"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/obscuro"
+                            android:textSize="15dp"
+                            android:gravity="left"
+                            android:text="Tarjeta de crédito o débito"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.30"
+                        android:gravity="right"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/tarjeta"
+                            android:layout_gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Separador-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/verde_zungu"
+                    android:layout_height="1dp">
+                </LinearLayout>
+                <!--Termina Separador-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/obscuro"
+                            android:textSize="15dp"
+                            android:text="PayPal"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:gravity="right"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/paypal"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--Separador-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/verde_zungu"
+                    android:layout_height="1dp">
+                </LinearLayout>
+                <!--Termina Separador-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/obscuro"
+                            android:textSize="15dp"
+                            android:text="SPEI"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/gris_claro"
+                    android:text="La información de tu cuenta se guarda de forma segura."
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:text="Cancelar"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textColor="@color/gris_fuerte"
+                android:background="@drawable/border_verde_radius"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
