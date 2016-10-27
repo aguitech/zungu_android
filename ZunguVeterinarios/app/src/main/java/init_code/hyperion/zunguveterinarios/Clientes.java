@@ -26,9 +26,10 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import init_code.hyperion.zunguveterinarios.adapters.ClienteAdapter;
 import init_code.hyperion.zunguveterinarios.adapters.MascotasAdapter;
 
-public class Mascotas extends AppCompatActivity {
+public class Clientes extends AppCompatActivity {
 
     ListView lv;
     EditText buscador;
@@ -38,18 +39,19 @@ public class Mascotas extends AppCompatActivity {
     public static ArrayList<String> listaImgMascotas = new ArrayList<String>();
     public static ArrayList<String> listaNombreCliente = new ArrayList<String>();
     public static ArrayList<String> listaNombreMascota = new ArrayList<String>();
-    public Mascotas mActivity = this;
-    public MascotasAdapter _mascotasAdapter;
+    public static ArrayList<String> listaIDS = new ArrayList<String>();
+    public Clientes mActivity = this;
+    public ClienteAdapter _mascotasAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mascotas);
+        setContentView(R.layout.activity_clientes);
 
         lv = (ListView)findViewById(R.id.lvClientes);
         buscador = (EditText)findViewById(R.id.txtBuscador);
 
-        _mascotasAdapter = new MascotasAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
+        _mascotasAdapter = new ClienteAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas, listaIDS);
         lv.setAdapter(_mascotasAdapter);
 
         buscador.setOnTouchListener(new View.OnTouchListener() {
@@ -64,10 +66,10 @@ public class Mascotas extends AppCompatActivity {
                         String param = buscador.getText().toString();
 
                         try {
-                            _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php?search=" + URLEncoder.encode(param, "UTF-8");
+                            _url = "http://hyperion.init-code.com/zungu/app/vt_get_clientes.php?search=" + URLEncoder.encode(param, "UTF-8");
 
                             lv.setAdapter(null);
-                            new Mascotas.RetrieveFeedTask().execute();
+                            new Clientes.RetrieveFeedTask().execute();
                             return true;
                         } catch (UnsupportedEncodingException e) {
                             e.printStackTrace();
@@ -79,14 +81,14 @@ public class Mascotas extends AppCompatActivity {
             }
         });
 
-        _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php";
-        new Mascotas.RetrieveFeedTask().execute();
+        _url = "http://hyperion.init-code.com/zungu/app/vt_get_clientes.php";
+        new Clientes.RetrieveFeedTask().execute();
     }
 
     public void showMascotas(View v){
-        _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php";
+        _url = "http://hyperion.init-code.com/zungu/app/vt_get_clientes.php";
         lv.setAdapter(null);
-        new Mascotas.RetrieveFeedTask().execute();
+        new Clientes.RetrieveFeedTask().execute();
     }
 
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
@@ -135,18 +137,20 @@ public class Mascotas extends AppCompatActivity {
                     listaNombreMascota.clear();
                     listaNombreCliente.clear();
                     listaImgMascotas.clear();
+                    listaIDS.clear();
 
                     for (int i = 0; i < arr.length(); i++) {
                         JSONObject jsonobject = arr.getJSONObject(i);
                         Log.d("nombre",jsonobject.getString("nombre"));
                         Log.d("foto",jsonobject.getString("foto"));
 
-                        listaNombreMascota.add(jsonobject.getString("nombre"));
-                        listaNombreCliente.add(jsonobject.getString("unombre") + " " + jsonobject.getString("apellido"));
+                        listaNombreMascota.add(jsonobject.getString("fecha_registro"));
+                        listaNombreCliente.add(jsonobject.getString("nombre"));
                         listaImgMascotas.add(jsonobject.getString("foto"));
+                        listaIDS.add(jsonobject.getString("id_usuario"));
                     }
 
-                    _mascotasAdapter = new MascotasAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
+                    _mascotasAdapter = new ClienteAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas, listaIDS);
                     //_mascotasAdapter.notifyDataSetChanged();
                     lv.setAdapter(_mascotasAdapter);
 

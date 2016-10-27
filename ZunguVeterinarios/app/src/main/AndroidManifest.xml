@@ -12,13 +12,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SlideUno"
             android:screenOrientation="portrait" />
@@ -47,7 +41,7 @@
         <activity android:name=".Editar_servicio" />
         <activity android:name=".Cliente_perfil" />
         <activity android:name=".Cliente_solicitar_pago" />
-        <activity android:name=".Mascotas" />
+        <activity android:name=".Mascotas"></activity>
         <activity android:name=".Detalle_mascota" />
         <activity android:name=".Adopcion" />
         <activity android:name=".Adopcion_dos" />
@@ -60,7 +54,16 @@
         <activity android:name=".Cuenta_suscripcion" />
         <activity android:name=".Cambiar_contrasena" />
         <activity android:name=".Eliminar_cuenta" />
-        <activity android:name=".Politicas_de_privacidad"></activity>
+        <activity android:name=".Politicas_de_privacidad" />
+        <activity android:name=".Servicio">
+        </activity>
+        <activity android:name=".Clientes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
