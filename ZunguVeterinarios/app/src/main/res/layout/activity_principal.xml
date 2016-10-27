@@ -72,7 +72,7 @@
                     android:orientation="vertical"
                     android:layout_marginLeft="20dp">
                     <TextView
-                        android:id="@+id/txtNombre"
+                        android:id="@+id/lblNombre"
                         android:textSize="12dp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -81,7 +81,7 @@
                         android:text="Nombre del establecimiento"/>
                     <TextView
                         android:layout_marginTop="3dp"
-                        android:id="@+id/txtDireccion"
+                        android:id="@+id/lblDireccion"
                         android:textSize="12dp"
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"

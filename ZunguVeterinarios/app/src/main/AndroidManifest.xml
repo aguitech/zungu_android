@@ -49,7 +49,7 @@
         <activity android:name=".Cliente_perfil" />
         <activity android:name=".Cliente_solicitar_pago" />
         <activity android:name=".Mascotas" />
-        <activity android:name=".Detalle_mascota"></activity>
+        <activity android:name=".Detalle_mascota" />
     </application>
 
 </manifest>
