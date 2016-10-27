@@ -31,6 +31,7 @@ public class Cambiar_contrasena extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cambiar_contrasena);
 
+        //
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
     public void cambiarContrasenia(View view) {
@@ -40,13 +41,11 @@ public class Cambiar_contrasena extends AppCompatActivity {
 */
 
 
-        EditText txtContraseniaActual = (EditText)findViewById(R.id.txtContraseniaActual);
-        EditText txtNuevaContrasenia = (EditText)findViewById(R.id.txtNuevaContrasenia);
-        EditText txtRepetirContrasenia = (EditText)findViewById(R.id.txtRepetirContrasenia);
+        EditText txtContrasenia = (EditText)findViewById(R.id.txtContrasenia);
 
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
-        if(txtContraseniaActual.getText().toString().length() < 1 || txtNuevaContrasenia.getText().toString().length() < 1){
+        if(txtContrasenia.getText().toString().length() < 1){
             showMsg("Introduce las contraseñas.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
@@ -61,20 +60,23 @@ public class Cambiar_contrasena extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/vt_cambiar_contrasenia.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
             //_url = "http://hyperion.init-code.com/zungu/app/vt_cambiar_contrasenia.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
             //if(txtNuevaContrasenia.getText().toString() == txtRepetirContrasenia.getText().toString()){
-            if(txtNuevaContrasenia.getText().toString().equals(txtRepetirContrasenia.getText().toString())){
+            _url = "http://hyperion.init-code.com/zungu/app/vt_cambiar_contrasenia.php?contrasenia="+ txtContrasenia.getText().toString() + "&id_veterinario=1";
+            new Cambiar_contrasena.RetrieveFeedTask().execute();
+            /*
+            if(txtContrasenia.getText().toString().equals(txtRepetirContrasenia.getText().toString())){
 
 
                 //showMsg(txtNuevaContrasenia.getText().toString());
                 //showMsg(txtRepetirContrasenia.getText().toString());
                 //showMsg("Las contraseñas coinciden.");
 
-                _url = "http://hyperion.init-code.com/zungu/app/vt_cambiar_contrasenia.php?contrasenia_actual="+ txtContraseniaActual.getText().toString() + "&nueva_contrasenia=" + txtNuevaContrasenia.getText().toString() + "&id_veterinario=1";
-                new Cambiar_contrasena.RetrieveFeedTask().execute();
+
             }else{
                 //showMsg(txtNuevaContrasenia.getText().toString());
                 //showMsg(txtRepetirContrasenia.getText().toString());
                 showMsg("Las contraseñas no coinciden.");
             }
+            */
 
 
 
@@ -134,7 +136,10 @@ public class Cambiar_contrasena extends AppCompatActivity {
                     JSONObject object = (JSONObject) new JSONTokener(response).nextValue();
 
                     showMsg("Se ha actualizado la contraseña.");
+
+                    showMsg(response);
 /*
+
                     EditText txtNombre = (EditText) findViewById(R.id.txtNombre);
                     EditText txtDireccion = (EditText) findViewById(R.id.txtDireccion);
 
