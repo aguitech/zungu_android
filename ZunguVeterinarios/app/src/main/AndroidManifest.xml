@@ -57,6 +57,10 @@
         <activity android:name=".Editar_establecimiento" />
         <activity android:name=".Preview_establecimiento" />
         <activity android:name=".Cuenta" />
+        <activity android:name=".Cuenta_suscripcion" />
+        <activity android:name=".Cambiar_contrasena" />
+        <activity android:name=".Eliminar_cuenta" />
+        <activity android:name=".Politicas_de_privacidad"></activity>
     </application>
 
 </manifest>

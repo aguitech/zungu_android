@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_eliminar_cuenta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Eliminar_cuenta">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/header"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/configuracion"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mi cuenta Zungu"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+                    <!--Separador-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/gris_fuerte"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp"
+                                android:textSize="15dp"
+                                android:text="Eliminar cuenta"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp"></LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="Por seguridad, ingresa tu contraseña:"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:hint="Contraseña"
+                                    android:textColor="@color/blanco"
+                                    android:background="@drawable/border_negro_radius"
+                                    android:inputType="textPassword"
+                                    android:textSize="12dp"
+                                    android:paddingLeft="10dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="80dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:text="Continuar"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12dp"
+                                    android:background="@drawable/btn_verde_radius"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="30dp">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:text="Cancelar"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12dp"
+                                    android:background="@drawable/btn_negro_radius"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+
+</RelativeLayout>
