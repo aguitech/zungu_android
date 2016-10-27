@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_mascotas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context="init_code.hyperion.zunguveterinarios.Mascotas">
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Clientes">
 
     <!--Comienza el contenedor padre-->
     <LinearLayout
@@ -70,12 +69,12 @@
                 android:gravity="center"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:src="@drawable/mascotas"
+                    android:src="@drawable/perfil"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="Mascotas"
+                    android:text="Clientes"
                     android:gravity="center"
                     android:textColor="@color/blanco"
                     android:textSize="15dp"
@@ -92,84 +91,6 @@
         <!--Termina contenedor del header-->
 
 
-        <!--Contenido Hijo-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:weightSum="1"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:layout_height="30dp">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.40"
-                android:gravity="center"
-                android:layout_height="match_parent">
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="Mis mascotas"
-                    android:textSize="12dp"
-                    android:textColor="@color/blanco"
-                    android:background="@drawable/tab_negro"
-                    android:textAllCaps="false"
-                    android:layout_height="match_parent"
-                    android:onClick="showMascotas" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.40"
-                android:gravity="center"
-                android:layout_height="match_parent">
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="Adopción"
-                    android:textSize="12dp"
-                    android:textColor="@color/obscuro"
-                    android:background="@drawable/tab_border_obscuro"
-                    android:textAllCaps="false"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <!--Buscador-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:focusableInTouchMode="true"
-            android:layout_marginTop="15dp"
-            android:weightSum="1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.90"
-                android:layout_height="40dp">
-                <EditText
-                    android:id="@+id/txtBuscador"
-                    android:layout_width="match_parent"
-                    android:hint="Perros"
-                    android:background="@android:color/transparent"
-                    android:layout_height="match_parent"
-                    android:paddingRight="10dp"
-                    android:drawableRight="@drawable/lupa"/>
-                />
-            </LinearLayout>
-        </LinearLayout>
-        <!--Termina Buscador-->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:weightSum="1"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.90"
-                android:background="@color/verde_zungu"
-                android:layout_height="1dp">
-            </LinearLayout>
-        </LinearLayout>
-        <!--Termina Separador-->
 
         <ScrollView
             android:layout_width="match_parent"
@@ -183,9 +104,51 @@
                     android:paddingBottom="10dp"
                     android:layout_height="wrap_content">
 
+                    <!--Contenido Hijo-->
+
+                    <!--Buscador-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="40dp">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:hint="Cientes"
+                                android:id="@+id/txtBuscador"
+                                android:background="@android:color/transparent"
+                                android:layout_height="match_parent"
+                                android:paddingRight="10dp"
+                                android:drawableRight="@drawable/lupa"/>
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Buscador-->
+                    <!--Separador-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp">
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
                     <!--Aquí va el ListView-->
                     <LinearLayout
-                        android:id="@+id/lista_mascotas"
+                        android:id="@+id/lista_clientes"
                         android:layout_width="match_parent"
                         android:weightSum="1"
                         android:layout_marginTop="20dp"
@@ -376,12 +339,38 @@
                     </LinearLayout>
                     <!--Aquí termina el ListView-->
 
+                    <!--Termina Contenido Hijo-->
+                    <LinearLayout
+                        android:id="@+id/add"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.35"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:textAllCaps="false"
+                                android:textSize="15dp"
+                                android:textColor="@color/gris_claro"
+                                android:background="@android:color/transparent"
+                                android:text="+ Agregar cliente"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </LinearLayout>
 
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>
 
-        <!--Termina Contenido Hijo-->
+
     </LinearLayout>
     <!--Termina contenedor padre-->
 
