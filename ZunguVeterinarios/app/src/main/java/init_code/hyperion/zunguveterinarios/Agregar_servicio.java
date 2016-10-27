@@ -37,51 +37,8 @@ public class Agregar_servicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_servicio);
 
-        /*
-        EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
-
-        EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-    */
-
-        //EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-/*
-        EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-
-        EditText txtCostoServicio = (EditText)findViewById(R.id.txtCostoServicio);
-        EditText txtDuracionServicio = (EditText)findViewById(R.id.txtDuracionServicio);
-        EditText txtDescripcionServicio = (EditText)findViewById(R.id.txtDescripcionServicio);
-        EditText txtCapacidadServicio = (EditText)findViewById(R.id.txtCapacidadServicio);
-*/
-
-
-        /*
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, "Hola", duration);
-        //Toast toast = Toast.makeText(context, txtNombreServicio.getText(), duration);
-        toast.show();
-        */
-
-        //btnAgregar.setOnClickListener();
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
-/*
-        Button btnAgregar = (Button)findViewById(R.id.btnAgregar);
-        btnAgregar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, "Hola2", duration);
-                toast.show();
-            }
-        });
-        */
-
 
 
     }
