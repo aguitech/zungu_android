@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Editar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Cliente_solicitar_pago.class);
                 //Intent i = new Intent(MainActivity.this, Cliente_perfil.class);
-                Intent i = new Intent(MainActivity.this, Principal.class);
+                //Intent i = new Intent(MainActivity.this, Registrar_mascota.class);
+                Intent i = new Intent(MainActivity.this, Agregar_ms_adopcion.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 
