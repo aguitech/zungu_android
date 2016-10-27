@@ -255,7 +255,9 @@
                                 android:textColor="@color/obscuro"
                                 android:textSize="12dp"
                                 android:background="@drawable/border_verde_radius"
-                                android:layout_height="match_parent" />
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnEditar"
+                                android:onClick="editarEstablecimiento" />
                         </LinearLayout>
                     </LinearLayout>
 
