@@ -194,7 +194,7 @@
                                 android:inputType="text"
                                 android:textSize="12dp"
                                 android:paddingLeft="10dp"
-                                />
+                                android:id="@+id/txtNombre" />
 
                             <EditText
                                 android:layout_width="match_parent"
@@ -206,7 +206,7 @@
                                 android:inputType="text"
                                 android:textSize="12dp"
                                 android:paddingLeft="10dp"
-                                />
+                                android:id="@+id/txtFechaNacimiento" />
 
                         </LinearLayout>
 
@@ -229,7 +229,7 @@
                             android:background="@color/fondo_input"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtEspecie" />
 
                     </LinearLayout>
 
@@ -249,7 +249,7 @@
                             android:background="@color/fondo_input"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtRaza" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -261,7 +261,7 @@
                             android:inputType="number"
                             android:layout_marginLeft="2dp"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtPeso" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -280,7 +280,7 @@
                             android:background="@color/fondo_input"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtColor" />
 
                         <EditText
                             android:layout_width="0dp"
@@ -292,7 +292,7 @@
                             android:inputType="number"
                             android:layout_marginLeft="2dp"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtHeats" />
                     </LinearLayout>
 
 
@@ -345,7 +345,7 @@
                             android:background="@color/fondo_input"
                             android:inputType="text"
                             android:paddingLeft="10dp"
-                            />
+                            android:id="@+id/txtSeniasParticulares" />
 
                     </LinearLayout>
 
@@ -592,7 +592,9 @@
                                 android:paddingLeft="10dp"
                                 android:textColor="@color/obscuro"
                                 android:background="@drawable/border_verde_radius"
-                                android:layout_height="30dp" />
+                                android:layout_height="30dp"
+                                android:id="@+id/btnRegistrar"
+                                android:onClick="registrarMascota" />
                         </LinearLayout>
 
                         <LinearLayout

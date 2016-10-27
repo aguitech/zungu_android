@@ -38,7 +38,6 @@
             android:name=".Registro"
             android:screenOrientation="portrait" />
         <activity android:name=".Principal" />
-        <activity android:name=".Servicios" />
         <activity android:name=".Agregar_servicio" />
         <activity android:name=".Anuncios_paypal" />
         <activity android:name=".Anuncios_spei" />
