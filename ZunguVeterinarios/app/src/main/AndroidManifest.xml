@@ -50,6 +50,11 @@
         <activity android:name=".Cliente_solicitar_pago" />
         <activity android:name=".Mascotas" />
         <activity android:name=".Detalle_mascota" />
+        <activity android:name=".Adopcion" />
+        <activity android:name=".Adopcion_dos" />
+        <activity android:name=".Adopcion_imagenes" />
+        <activity android:name=".Agregar_ms_adopcion" />
+        <activity android:name=".Registrar_mascota" />
     </application>
 
 </manifest>

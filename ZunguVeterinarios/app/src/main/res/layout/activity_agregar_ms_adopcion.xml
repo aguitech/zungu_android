@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_agregar_ms_adopcion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondozungu"
+    tools:context="init_code.hyperion.zunguveterinarios.Agregar_ms_adopcion">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/mascotas"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mascotas"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+
+        <!--Contenido Hijo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Mis mascotas"
+                    android:textSize="12dp"
+                    android:textColor="@color/obscuro"
+                    android:background="@drawable/tab_border_transparent_derecho"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Adopción"
+                    android:textSize="12dp"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/tab_negro_derecho"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Separador-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/gris_fuerte"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp"
+                    android:text="Agregar mascota en adopción"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".90"
+                android:background="@color/verde_zungu"
+                android:layout_height="1dp"></LinearLayout>
+        </LinearLayout>
+        <!--Termina Separador-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/subir_imagen"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.70"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:hint="Nombre (o raza)"
+                                android:layout_height="40dp"
+                                android:textColor="@color/blanco"
+                                android:background="@color/verde_zungu"
+                                android:inputType="text"
+                                android:textSize="12dp"
+                                android:paddingLeft="10dp"
+                                />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:hint="Edad"
+                                android:layout_marginTop="2dp"
+                                android:layout_height="40dp"
+                                android:textColor="@color/blanco"
+                                android:background="@color/verde_zungu"
+                                android:inputType="text"
+                                android:textSize="12dp"
+                                android:paddingLeft="10dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/inputdoble"
+                        android:id="@+id/comp_input"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="Descripción"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:background="@color/fondo_input"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/comp_input"
+                        android:id="@+id/comp_input_empty"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/fondo_input"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/comp_input_empty"
+                        android:id="@+id/ubicacion"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="Descripción"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:background="@color/fondo_input"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/ubicacion"
+                        android:id="@+id/datos"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Datos del Contacto"
+                            android:textSize="15dp"
+                            android:gravity="fill_vertical"
+                            android:paddingLeft="10dp"
+                            android:textStyle="bold"
+                            android:layout_height="40dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_below="@+id/datos"
+                        android:id="@+id/input_doble"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="40dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="Nombre"
+                            android:textSize="12dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@color/fondo_input"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="Numero"
+                            android:textSize="12dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:background="@color/fondo_input"
+                            android:inputType="number"
+                            android:layout_marginLeft="2dp"
+                            android:paddingLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/input_doble"
+                        android:id="@+id/input_correo"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="Correo"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/fondo_input"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:id="@+id/botonagregar"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Confirmar"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/obscuro"
+                                android:background="@drawable/border_verde_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.10"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.30"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Cancelar"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/obscuro"
+                                android:background="@drawable/border_verde_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <!--Termina Contenido Hijo-->
+    </LinearLayout>
+
+    <!--Termina contenedor padre-->
+
+</RelativeLayout>
