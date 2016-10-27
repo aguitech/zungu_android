@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
         if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
             showMsg("Usuario o password no válido.");
         } else {
-            _url = "http://hyperion.init-code.com/zungu/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
+            _url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             new RetrieveFeedTask().execute();
         }
     }
@@ -119,6 +119,10 @@ public class Login extends AppCompatActivity {
                         Log.i("IDU", Integer.toString(value));
 
                         text = "Bienvenido a Zungu veterinarios";
+                        Intent i = new Intent(Login.this, Principal.class);
+
+                        startActivity(i);
+                        finish();
                     }
 
                     Toast toast = Toast.makeText(context, text, duration);

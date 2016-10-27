@@ -195,6 +195,10 @@ public class Registro extends AppCompatActivity {
                         Log.i("IDU", Integer.toString(value));
 
                         text = "Bienvenido a Zungu veterinarios";
+                        Intent i = new Intent(Registro.this, Principal.class);
+
+                        startActivity(i);
+                        finish();
                     }
 
                     Toast toast = Toast.makeText(context, text, duration);
