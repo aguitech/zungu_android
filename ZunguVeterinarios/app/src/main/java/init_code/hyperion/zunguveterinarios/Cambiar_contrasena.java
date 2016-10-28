@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -33,6 +34,14 @@ public class Cambiar_contrasena extends AppCompatActivity {
 
         //
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+    }
+    public void irAnterior(View view) {
+        Intent i = new Intent(Cambiar_contrasena.this, Cuenta.class);
+        startActivity(i);
+    }
+    public void cancelarAccion(View view) {
+        Intent i = new Intent(Cambiar_contrasena.this, Cuenta.class);
+        startActivity(i);
     }
     public void cambiarContrasenia(View view) {
         /*
