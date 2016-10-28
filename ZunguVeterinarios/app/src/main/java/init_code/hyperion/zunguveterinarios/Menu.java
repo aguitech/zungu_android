@@ -19,7 +19,6 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         //sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        //String value = sharedpreferences.getString("nombre", " ");
         //int value = sharedpreferences.getInt("idu", 0);
 
         //TextView txtNombre = (TextView)findViewById(R.id.txtNombre);
