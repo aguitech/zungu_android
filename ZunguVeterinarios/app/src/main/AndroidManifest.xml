@@ -3,6 +3,7 @@
     package="init_code.hyperion.zunguveterinarios">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -99,7 +100,6 @@
         <activity
             android:name=".Cuenta_suscripcion"
             android:screenOrientation="portrait" />
-        
         <activity android:name=".Cambiar_contrasena" />
 
         <activity android:name=".Citas" android:screenOrientation="portrait"/>
@@ -112,10 +112,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Servicio"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Clientes"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Anuncios"
             android:screenOrientation="portrait" />
@@ -138,6 +138,8 @@
         <activity android:name=".Tienda" android:screenOrientation="portrait"/>
         <activity android:name=".Inventario" android:screenOrientation="portrait"/>
         <activity android:name=".Gastos" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cuenta_pago" />
+        <activity android:name=".Estadisticas"></activity>
     </application>
 
 </manifest>

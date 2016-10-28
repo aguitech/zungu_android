@@ -23,11 +23,13 @@ tools:context="init_code.hyperion.zunguveterinarios.Menu">
             android:layout_width="0dp"
             android:layout_weight="0.20"
             android:layout_height="50dp">
+            <!--
             <ImageView
                 android:layout_width="wrap_content"
                 android:visibility="gone"
                 android:src="@drawable/perfil"
                 android:layout_height="wrap_content" />
+                -->
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"

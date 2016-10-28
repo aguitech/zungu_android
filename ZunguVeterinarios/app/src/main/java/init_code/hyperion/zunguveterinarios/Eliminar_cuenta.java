@@ -30,6 +30,14 @@ public class Eliminar_cuenta extends AppCompatActivity {
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
+    public void cancelarAccion(View view) {
+        Intent i = new Intent(Eliminar_cuenta.this, Cuenta.class);
+        startActivity(i);
+    }
+    public void irAnterior(View view) {
+        Intent i = new Intent(Eliminar_cuenta.this, Cuenta.class);
+        startActivity(i);
+    }
     public void eliminarCuenta(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);

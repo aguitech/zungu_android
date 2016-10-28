@@ -49,7 +49,7 @@ public class Editar_servicio extends AppCompatActivity {
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
-    public void cancelarServicio(View view) {
+    public void cancelarAccion(View view) {
         Intent i = new Intent(Editar_servicio.this, Servicio.class);
         startActivity(i);
     }
