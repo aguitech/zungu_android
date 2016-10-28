@@ -33,9 +33,18 @@ public class Anuncios_spei extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
     public void cancelarPago(View view) {
-        Intent i = new Intent(Anuncios_spei.this, Metodos_de_pago.class);
+        finish();
+    }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Anuncios_spei.this, Menu.class);
         startActivity(i);
     }
+
+    public void goBack(View v){
+        finish();
+    }
+
     public void agregarPagoSPEI(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
@@ -53,7 +62,7 @@ public class Anuncios_spei extends AppCompatActivity {
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtPais.getText().toString().length() < 1 || txtEstado.getText().toString().length() < 1){
-            showMsg("Usuario o password no válido.");
+            showMsg("Todos los datos son necesarios.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             /**
