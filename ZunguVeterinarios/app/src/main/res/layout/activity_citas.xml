@@ -29,6 +29,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/menu"
+                    android:onClick="goMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -61,6 +62,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/back"
+                    android:onClick="goBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -124,6 +126,7 @@
                     android:layout_width="match_parent"
                     android:text="Solicitudes"
                     android:textSize="12dp"
+                    android:onClick="goSolicitudes"
                     android:textColor="@color/obscuro"
                     android:background="@drawable/tab_border_obscuro"
                     android:textAllCaps="false"
@@ -148,7 +151,7 @@
                     android:textColor="@color/verde_zungu"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:text="20 JUN 2016"
+                    android:text="28 OCT 2016"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
@@ -283,6 +286,7 @@
                 android:textColor="@color/gris_claro"
                 android:text="+ Agregar cita"
                 android:textSize="12dp"
+                android:onClick="goAgregar"
                 android:textAllCaps="false"
                 android:layout_height="25dp" />
         </LinearLayout>
@@ -306,6 +310,7 @@
                 android:background="@drawable/border_verde_radius"
                 android:textColor="@color/obscuro"
                 android:text="Ver calendario"
+                android:onClick="goCalendario"
                 android:textSize="12dp"
                 android:textAllCaps="false"
                 android:layout_height="25dp" />
