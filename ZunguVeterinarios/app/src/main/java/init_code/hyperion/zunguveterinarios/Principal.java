@@ -1,11 +1,13 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,10 @@ public class Principal extends AppCompatActivity {
         new Principal.RetrieveFeedTaskGet().execute();
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+    }
+    public void editarEstablecimiento(View view) {
+        Intent i = new Intent(Principal.this, Editar_establecimiento.class);
+        startActivity(i);
     }
     class RetrieveFeedTaskGet extends AsyncTask<Void, Void, String> {
 
