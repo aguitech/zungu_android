@@ -289,7 +289,7 @@
                     android:layout_weight=".25"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/servicios"/>
+                    android:src="@drawable/servicios_dos"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_weight=".25"
