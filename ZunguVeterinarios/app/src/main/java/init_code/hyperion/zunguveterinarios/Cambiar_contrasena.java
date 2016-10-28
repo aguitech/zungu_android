@@ -34,6 +34,9 @@ public class Cambiar_contrasena extends AppCompatActivity {
 
         //
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        String valueNombre = sharedpreferences.getString("nombre", " ");
+        showMsg(valueNombre);
+
     }
     public void irAnterior(View view) {
         Intent i = new Intent(Cambiar_contrasena.this, Cuenta.class);
