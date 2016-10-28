@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class Estadisticas extends AppCompatActivity {
+public class Ingresos_egresos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadisticas);
+        setContentView(R.layout.activity_ingresos_egresos);
     }
 
     public void enviar(View v){
@@ -28,12 +28,12 @@ public class Estadisticas extends AppCompatActivity {
     }
 
     public void goMenu(View v){
-        Intent i = new Intent(Estadisticas.this, Menu.class);
+        Intent i = new Intent(Ingresos_egresos.this, Menu.class);
         startActivity(i);
     }
 
-    public void goIngresos(View v){
-        Intent i = new Intent(Estadisticas.this, Ingresos_egresos.class);
+    public void goEstadisticas(View v){
+        Intent i = new Intent(Ingresos_egresos.this, Estadisticas.class);
         startActivity(i);
     }
 

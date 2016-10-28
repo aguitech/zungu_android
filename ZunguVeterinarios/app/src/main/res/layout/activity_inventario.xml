@@ -28,6 +28,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/menu"
+                    android:onClick="goMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -60,6 +61,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/back"
+                    android:onClick="goBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -123,6 +125,7 @@
                     android:layout_width="match_parent"
                     android:text="Agregar producto"
                     android:textSize="12dp"
+                    android:onClick="goAgregar"
                     android:textColor="@color/obscuro"
                     android:background="@drawable/tab_border_obscuro"
                     android:textAllCaps="false"

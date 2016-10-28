@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mascotas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="init_code.hyperion.zunguveterinarios.Agregar_cita">
+
+    <!--Comienza el contenedor padre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--Comienza contenedor del header-->
+        <LinearLayout
+            android:background="@color/blanco"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.60"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/logo_zungu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:background="@color/verde_zungu"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/mascotas"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mascotas"
+                    android:gravity="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina contenedor del header-->
+
+
+        <!--Contenido Hijo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:hint="AGREGAR CITA"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina Buscador-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.90"
+                android:background="@color/verde_zungu"
+                android:layout_height="1dp">
+            </LinearLayout>
+        </LinearLayout>
+        <!--Termina Separador-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.81"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Cliente"
+                                android:gravity="left|center"
+                                android:paddingLeft="20dp"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:background="@drawable/border_negro_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.40"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Mes/Día"
+                                android:gravity="center"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:background="@drawable/border_negro_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.40"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Horario disponible"
+                                android:gravity="center"
+                                android:textAllCaps="false"
+                                android:textSize="12dp"
+                                android:background="@drawable/border_negro_radius"
+                                android:layout_height="30dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.80"
+                            android:background="@color/verde_zungu"
+                            android:layout_height="1dp">
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.80"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="Motivo de la cita:"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="15dp"
+                                android:textColor="@color/gris_fuerte"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--Termina Separador-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.90"
+                            android:layout_height="wrap_content">
+                            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="fill_parent"
+                                android:weightSum="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton android:id="@+id/revicion"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:textSize="12dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Revisión Mensual"
+                                    />
+
+                                <RadioButton android:id="@+id/sevicio"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="wrap_content"
+                                    android:text="Servicio de Estética"
+                                    />
+
+                                <RadioButton android:id="@+id/vacunacion"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vacunación"
+                                    />
+
+                                <RadioButton android:id="@+id/cirugia"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cirugía mayor"
+                                    />
+
+                                <RadioButton android:id="@+id/otro"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12dp"
+                                    android:textColor="@color/gris_fuerte"
+                                    android:layout_height="wrap_content"
+                                    android:text="Otro"
+                                    />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/border_negro_radius"
+                                    android:layout_height="20dp" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <!--Termina Contenido Hijo-->
+    </LinearLayout>
+    <!--Termina contenedor padre-->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:text="Confirmar"
+                android:textColor="@color/gris_fuerte"
+                android:textAllCaps="false"
+                android:background="@drawable/border_verde_radius"
+                android:layout_height="30dp"
+                android:textSize="12dp"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:text="Cancelar"
+                android:textColor="@color/gris_fuerte"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:background="@drawable/border_verde_radius"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

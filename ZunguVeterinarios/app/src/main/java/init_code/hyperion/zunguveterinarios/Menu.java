@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -55,7 +56,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goEstadisticas(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Estadisticas.class);
         startActivity(i);
     }
 
@@ -71,6 +72,12 @@ public class Menu extends AppCompatActivity {
 
     public void goFormas(View v){
         Intent i = new Intent(Menu.this, Servicio.class);
+        startActivity(i);
+    }
+
+    public void cerrarS(View v){
+        Intent i = new Intent(Menu.this, Login.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }
 }

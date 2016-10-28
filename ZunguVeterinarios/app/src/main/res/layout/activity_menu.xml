@@ -393,7 +393,7 @@ tools:context="init_code.hyperion.zunguveterinarios.Menu">
                 android:paddingLeft="10dp"
                 android:textColor="@color/blanco"
                 android:layout_height="wrap_content"
-                android:onClick="cerrar"
+                android:onClick="cerrarS"
                 android:id="@+id/btnCerrarDos" />
         </LinearLayout>
     </LinearLayout>
