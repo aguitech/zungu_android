@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -54,6 +55,20 @@ public class Servicio extends AppCompatActivity {
 
         _url = "http://hyperion.init-code.com/zungu/app/vt_get_servicios.php";
         new Servicio.RetrieveFeedTask().execute();
+    }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Servicio.this, Menu.class);
+        startActivity(i);
+    }
+
+    public void goAgregar(View v){
+        Intent i = new Intent(Servicio.this, Agregar_servicio.class);
+        startActivity(i);
+    }
+
+    public void goBack(View v){
+        finish();
     }
 
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {

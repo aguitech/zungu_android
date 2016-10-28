@@ -117,7 +117,7 @@ tools:context="init_code.hyperion.zunguveterinarios.Menu">
             android:id="@+id/btnPerfil">
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Perfil"
+                android:text="Servicio"
                 android:onClick="goPerfil"
                 android:textSize="18dp"
                 android:paddingLeft="10dp"

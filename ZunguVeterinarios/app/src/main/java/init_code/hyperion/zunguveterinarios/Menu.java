@@ -36,7 +36,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goPerfil(View v){
-        Intent i = new Intent(Menu.this, Principal.class);
+        Intent i = new Intent(Menu.this, Servicio.class);
         startActivity(i);
     }
 

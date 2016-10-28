@@ -39,11 +39,27 @@ public class Agregar_servicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_servicio);
 
-
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
-
     }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Agregar_servicio.this, Menu.class);
+        startActivity(i);
+    }
+
+
+    public void goServicio(View v){
+        Intent i = new Intent(Agregar_servicio.this, Servicio.class);
+        startActivity(i);
+    }
+
+    public void goBack(View v){
+        finish();
+    }
+    public void cancelar(View v){
+        finish();
+    }
+
     public void agregarServicio(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
