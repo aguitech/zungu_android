@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
 
-                //Intent i = new Intent(MainActivity.this, Servicios.class);
+                Intent i = new Intent(MainActivity.this, Servicio.class);
                 //Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Editar_producto.class);
@@ -28,9 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Cliente_perfil.class);
                 //Intent i = new Intent(MainActivity.this, Registrar_mascota.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_ms_adopcion.class);
-                Intent i = new Intent(MainActivity.this, Editar_establecimiento.class);
+                //Intent i = new Intent(MainActivity.this, Editar_establecimiento.class);
+                //Intent i = new Intent(MainActivity.this, Cambiar_contrasena.class);
+                //Intent i = new Intent(MainActivity.this, Eliminar_cuenta.class);
+                //Intent i = new Intent(MainActivity.this, Cambiar_contrasena.class);
+                Intent innt = new Intent(MainActivity.this, Preview_establecimiento.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
-                startActivity(i);
+                //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
+                startActivity(innt);
 
                 finish();
             }

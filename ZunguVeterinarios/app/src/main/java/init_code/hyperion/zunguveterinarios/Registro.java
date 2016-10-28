@@ -31,6 +31,7 @@ public class Registro extends AppCompatActivity {
 
     private String _url;
     public static final String idu = "idu";
+    public static final String nombre = "";
     public static final String MyPREFERENCES = "MyPrefs" ;
     SharedPreferences sharedpreferences;
 
@@ -183,6 +184,7 @@ public class Registro extends AppCompatActivity {
                 try {
                     JSONObject object = (JSONObject) new JSONTokener(response).nextValue();
                     int ID = object.getInt("id");
+                    String NOMBRE = object.getString("nombre");
                     CharSequence text;
 
                     if(ID == 0){
@@ -190,11 +192,16 @@ public class Registro extends AppCompatActivity {
                     } else {
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putInt(idu, ID);
+                        editor.putString(nombre, NOMBRE);
                         editor.commit();
                         int value = sharedpreferences.getInt("idu", 0);
                         Log.i("IDU", Integer.toString(value));
 
                         text = "Bienvenido a Zungu veterinarios";
+                        Intent i = new Intent(Registro.this, Principal.class);
+
+                        startActivity(i);
+                        finish();
                     }
 
                     Toast toast = Toast.makeText(context, text, duration);

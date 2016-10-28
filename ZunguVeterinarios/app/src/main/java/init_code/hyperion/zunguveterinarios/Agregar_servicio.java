@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -37,51 +38,8 @@ public class Agregar_servicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_servicio);
 
-        /*
-        EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
-
-        EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-    */
-
-        //EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-/*
-        EditText txtNombreServicio = (EditText)findViewById(R.id.txtNombreServicio);
-
-        EditText txtCostoServicio = (EditText)findViewById(R.id.txtCostoServicio);
-        EditText txtDuracionServicio = (EditText)findViewById(R.id.txtDuracionServicio);
-        EditText txtDescripcionServicio = (EditText)findViewById(R.id.txtDescripcionServicio);
-        EditText txtCapacidadServicio = (EditText)findViewById(R.id.txtCapacidadServicio);
-*/
-
-
-        /*
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, "Hola", duration);
-        //Toast toast = Toast.makeText(context, txtNombreServicio.getText(), duration);
-        toast.show();
-        */
-
-        //btnAgregar.setOnClickListener();
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
-/*
-        Button btnAgregar = (Button)findViewById(R.id.btnAgregar);
-        btnAgregar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Context context = getApplicationContext();
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, "Hola2", duration);
-                toast.show();
-            }
-        });
-        */
-
 
 
     }
@@ -101,7 +59,7 @@ public class Agregar_servicio extends AppCompatActivity {
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
-            showMsg("Usuario o password no válido.");
+            showMsg("Introduce los valores.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             /**
@@ -163,6 +121,10 @@ public class Agregar_servicio extends AppCompatActivity {
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
 
+                showMsg("Se ha agregado el servicio.");
+
+                Intent i = new Intent(Agregar_servicio.this, Servicio.class);
+                startActivity(i);
                 /*
                 try {
 

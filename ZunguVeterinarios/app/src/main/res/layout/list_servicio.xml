@@ -10,45 +10,38 @@
         android:weightSum="1"
         android:gravity="center_vertical"
         android:layout_marginBottom="4dp"
-        android:layout_height="50dp">
+        android:layout_height="35dp">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.20"
-            android:gravity="center"
-            android:layout_gravity="center_vertical"
+            android:layout_weight="0.30"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:src="@drawable/animal_notifiaciones"
-                android:layout_height="match_parent"
-                android:id="@+id/imgMascota" />
+                android:id="@+id/txtCosto"
+                android:text="$00.00 "
+                android:textColor="@color/gris_fuerte"
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.50"
-            android:paddingLeft="5dp"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:layout_height="match_parent">
+            android:layout_weight="0.40"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
             <TextView
                 android:layout_width="match_parent"
-                android:text="Nombre de Mascota"
+                android:text="Servicio 1"
+                android:id="@+id/txtNombre"
                 android:textStyle="bold"
                 android:textColor="@color/gris_fuerte"
                 android:textSize="12dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtNombreMascota" />
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Pertence a: Nombre de cliente"
-                android:textColor="@color/gris_claro"
-                android:textSize="12dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtNombreCliente" />
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -60,8 +53,8 @@
             <ImageView
                 android:layout_width="20dp"
                 android:src="@drawable/lapiz"
-                android:layout_height="wrap_content"
-                android:id="@+id/imgEliminar" />
+                android:id="@+id/imgEliminar"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -73,10 +66,17 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_gravity="center"
-                android:src="@drawable/expediente"
                 android:id="@+id/imgDetalle"
+                android:src="@drawable/ojo"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/verde_zungu"
+        android:layout_height="1dp">
 
     </LinearLayout>
 

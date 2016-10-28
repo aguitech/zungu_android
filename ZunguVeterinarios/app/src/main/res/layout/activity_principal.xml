@@ -8,6 +8,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="16dp"
+    android:background="@color/blanco"
     tools:context="init_code.hyperion.zunguveterinarios.Principal">
     <RelativeLayout
         android:paddingLeft="16dp"

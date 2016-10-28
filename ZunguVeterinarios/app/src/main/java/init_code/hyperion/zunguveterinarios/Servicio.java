@@ -27,8 +27,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import init_code.hyperion.zunguveterinarios.adapters.MascotasAdapter;
+import init_code.hyperion.zunguveterinarios.adapters.ServicioAdapter;
 
-public class Mascotas extends AppCompatActivity {
+public class Servicio extends AppCompatActivity {
 
     ListView lv;
     EditText buscador;
@@ -38,55 +39,21 @@ public class Mascotas extends AppCompatActivity {
     public static ArrayList<String> listaImgMascotas = new ArrayList<String>();
     public static ArrayList<String> listaNombreCliente = new ArrayList<String>();
     public static ArrayList<String> listaNombreMascota = new ArrayList<String>();
-    public Mascotas mActivity = this;
-    public MascotasAdapter _mascotasAdapter;
+
+    public Servicio mActivity = this;
+    public ServicioAdapter _mascotasAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mascotas);
+        setContentView(R.layout.activity_servicio);
+        lv = (ListView)findViewById(R.id.lista_servicios);
 
-        lv = (ListView)findViewById(R.id.lvClientes);
-        buscador = (EditText)findViewById(R.id.txtBuscador);
-
-        _mascotasAdapter = new MascotasAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
+        _mascotasAdapter = new ServicioAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
         lv.setAdapter(_mascotasAdapter);
 
-        buscador.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_UP) {
-                    //Log.d("click", String.valueOf(event.getRawX()));
-                    //Log.d("izq", String.valueOf(buscador.getTotalPaddingLeft()));
-                    //Log.d("der", String.valueOf(buscador.getTotalPaddingRight()));
-                    //Log.d("total", String.valueOf(buscador.getWidth()));
-                    if(event.getRawX() >= ((buscador.getWidth() - buscador.getTotalPaddingRight()))) {
-                        String param = buscador.getText().toString();
-
-                        try {
-                            _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php?search=" + URLEncoder.encode(param, "UTF-8");
-
-                            lv.setAdapter(null);
-                            new Mascotas.RetrieveFeedTask().execute();
-                            return true;
-                        } catch (UnsupportedEncodingException e) {
-                            e.printStackTrace();
-                        }
-
-                    }
-                }
-                return false;
-            }
-        });
-
-        _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php";
-        new Mascotas.RetrieveFeedTask().execute();
-    }
-
-    public void showMascotas(View v){
-        _url = "http://hyperion.init-code.com/zungu/app/vt_get_mascotas.php";
-        lv.setAdapter(null);
-        new Mascotas.RetrieveFeedTask().execute();
+        _url = "http://hyperion.init-code.com/zungu/app/vt_get_servicios.php";
+        new Servicio.RetrieveFeedTask().execute();
     }
 
     class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
@@ -139,15 +106,13 @@ public class Mascotas extends AppCompatActivity {
                     for (int i = 0; i < arr.length(); i++) {
                         JSONObject jsonobject = arr.getJSONObject(i);
                         Log.d("nombre",jsonobject.getString("nombre"));
-                        Log.d("foto",jsonobject.getString("foto"));
 
                         listaNombreMascota.add(jsonobject.getString("nombre"));
-                        listaNombreCliente.add(jsonobject.getString("unombre") + " " + jsonobject.getString("apellido"));
-                        listaImgMascotas.add(jsonobject.getString("foto"));
+                        listaNombreCliente.add(jsonobject.getString("costo"));
+                        listaImgMascotas.add(jsonobject.getString("id_servicio_veterinario"));
                     }
 
-                    _mascotasAdapter = new MascotasAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
-                    //_mascotasAdapter.notifyDataSetChanged();
+                    _mascotasAdapter = new ServicioAdapter(mActivity, listaNombreMascota, listaNombreCliente, listaImgMascotas);
                     lv.setAdapter(_mascotasAdapter);
 
                 } catch (Exception e) {
