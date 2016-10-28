@@ -20,6 +20,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Editar_servicio extends AppCompatActivity {
 
@@ -66,6 +67,8 @@ public class Editar_servicio extends AppCompatActivity {
         EditText txtDescripcionServicio = (EditText)findViewById(R.id.txtDescripcionServicio);
         EditText txtCapacidadServicio = (EditText)findViewById(R.id.txtCapacidadServicio);
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
@@ -80,7 +83,7 @@ public class Editar_servicio extends AppCompatActivity {
              private EditText txtCapacidadServicio;
              * */
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
-            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_servicio.php?id_editar=1&nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_servicio.php?id_editar=1&nombre="+ URLEncoder.encode(txtNombreServicio.getText().toString()) + "&costo=" + URLEncoder.encode(txtCostoServicio.getText().toString()) + "&duracion=" + URLEncoder.encode(txtDuracionServicio.getText().toString()) + "&descripcion=" + URLEncoder.encode(txtDescripcionServicio.getText().toString()) + "&capacidad=" + URLEncoder.encode(txtCapacidadServicio.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             new Editar_servicio.RetrieveFeedTask().execute();
         }
     }

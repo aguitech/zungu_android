@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Agregar_ms_adopcion extends AppCompatActivity {
 
@@ -41,6 +42,8 @@ public class Agregar_ms_adopcion extends AppCompatActivity {
         EditText txtNumeroUsuario = (EditText)findViewById(R.id.txtNumeroUsuario);
         EditText txtCorreoUsuario = (EditText)findViewById(R.id.txtCorreoUsuario);
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtNombre.getText().toString().length() < 1 || txtEdad.getText().toString().length() < 1){
@@ -57,7 +60,7 @@ public class Agregar_ms_adopcion extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_servicio.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_adocion.php?nombre="+ txtNombre.getText().toString() + "&edad=" + txtEdad.getText().toString() + "&descripcion=" + txtDescripcion.getText().toString() + "&nombre_usuario=" + txtNombreUsuario.getText().toString() + "&correo_usuario=" + txtCorreoUsuario.getText().toString() + "&numero_usuario=" + txtNumeroUsuario.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_mascota_adopcion.php?nombre="+ txtNombre.getText().toString() + "&edad=" + txtEdad.getText().toString() + "&descripcion=" + txtDescripcion.getText().toString() + "&nombre_usuario=" + txtNombreUsuario.getText().toString() + "&correo_usuario=" + txtCorreoUsuario.getText().toString() + "&numero_usuario=" + txtNumeroUsuario.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_mascota_adopcion.php?nombre="+ URLEncoder.encode(txtNombre.getText().toString()) + "&edad=" + URLEncoder.encode(txtEdad.getText().toString()) + "&descripcion=" + URLEncoder.encode(txtDescripcion.getText().toString()) + "&nombre_usuario=" + URLEncoder.encode(txtNombreUsuario.getText().toString()) + "&correo_usuario=" + URLEncoder.encode(txtCorreoUsuario.getText().toString()) + "&numero_usuario=" + URLEncoder.encode(txtNumeroUsuario.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             //new Agregar_servicio.RetrieveFeedTask().execute();
             new Agregar_ms_adopcion.RetrieveFeedTask().execute();
         }

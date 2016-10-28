@@ -44,6 +44,8 @@ public class Registrar_mascota extends AppCompatActivity {
         //EditText txtSexo = (EditText)findViewById(R.id.txtSexo);
         EditText txtSeniasParticulares = (EditText)findViewById(R.id.txtSeniasParticulares);
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtNombre.getText().toString().length() < 1 || txtFechaNacimiento.getText().toString().length() < 1){
@@ -59,7 +61,7 @@ public class Registrar_mascota extends AppCompatActivity {
              * */
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_servicio.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_registrar_mascota.php?nombre="+ txtNombre.getText().toString() + "&fecha_nacimiento=" + txtFechaNacimiento.getText().toString() + "&especie=" + txtEspecie.getText().toString() + "&raza=" + txtRaza.getText().toString() + "&peso=" + txtPeso.getText().toString() + "&color=" + txtColor.getText().toString() + "&heats=" + txtHeats.getText().toString() + "&senias_particulares=" + txtSeniasParticulares.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_registrar_mascota.php?nombre="+ txtNombre.getText().toString() + "&fecha_nacimiento=" + txtFechaNacimiento.getText().toString() + "&especie=" + txtEspecie.getText().toString() + "&raza=" + txtRaza.getText().toString() + "&peso=" + txtPeso.getText().toString() + "&color=" + txtColor.getText().toString() + "&heats=" + txtHeats.getText().toString() + "&senias_particulares=" + txtSeniasParticulares.getText().toString() + "&id_veterinario=" + String.valueOf(valueID);
             //new Agregar_servicio.RetrieveFeedTask().execute();
             new Registrar_mascota.RetrieveFeedTask().execute();
         }

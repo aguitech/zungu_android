@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Anuncios_paypal extends AppCompatActivity {
 
@@ -54,6 +55,8 @@ public class Anuncios_paypal extends AppCompatActivity {
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
 
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtPais.getText().toString().length() < 1 || txtEstado.getText().toString().length() < 1){
@@ -71,7 +74,7 @@ public class Anuncios_paypal extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_servicio.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_paypal.php?pais="+ txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&numero_spei=" + txtNumeroSpei.getText().toString() + "&id_veterinario=1";
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_paypal.php?pais="+ txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&numero_spei=" + txtNumeroSpei.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_paypal.php?nombre=" + txtNombre.getText().toString() + "&apellido=" + txtApellido.getText().toString() + "&email=" + txtEmail.getText().toString() + "&pais=" + txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&cantidad=" + txtCantidad.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_paypal.php?nombre=" + URLEncoder.encode(txtNombre.getText().toString()) + "&apellido=" + URLEncoder.encode(txtApellido.getText().toString()) + "&email=" + URLEncoder.encode(txtEmail.getText().toString()) + "&pais=" + URLEncoder.encode(txtPais.getText().toString()) + "&estado=" + URLEncoder.encode(txtEstado.getText().toString()) + "&codigo_postal=" + URLEncoder.encode(txtCodigoPostal.getText().toString()) + "&cantidad=" + URLEncoder.encode(txtCantidad.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             //new Agregar_servicio.RetrieveFeedTask().execute();
             new Anuncios_paypal.RetrieveFeedTask().execute();
         }

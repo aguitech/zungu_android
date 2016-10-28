@@ -15,6 +15,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Anuncios_tarjeta extends AppCompatActivity {
 
@@ -55,6 +56,9 @@ public class Anuncios_tarjeta extends AppCompatActivity {
         EditText txtCodigoPostal = (EditText)findViewById(R.id.txtCodigoPostal);
 
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
+
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtPais.getText().toString().length() < 1 || txtEstado.getText().toString().length() < 1){
             showMsg("Usuario o password no válido.");
@@ -70,7 +74,7 @@ public class Anuncios_tarjeta extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_servicio.php?nombre="+ txtNombreServicio.getText().toString() + "&costo=" + txtCostoServicio.getText().toString() + "&duracion=" + txtDuracionServicio.getText().toString() + "&descripcion=" + txtDescripcionServicio.getText().toString() + "&capacidad=" + txtCapacidadServicio.getText().toString() + "&id_veterinario=1";
             //_url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_tarjeta.php?pais="+ txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&numero_spei=" + txtNumeroSpei.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_tarjeta.php?pais="+ txtPais.getText().toString() + "&estado=" + txtEstado.getText().toString() + "&codigo_postal=" + txtCodigoPostal.getText().toString() + "&nombre_tarjeta=" + txtNombreTarjeta.getText().toString() + "&numero_tarjeta=" + txtNumeroTarjeta.getText().toString() + "&cantidad_pago=" + txtCantidadPago.getText().toString() + "&email=" + txtEmail.getText().toString() + "&cvv_tarjeta=" + txtCvvTarjeta.getText().toString() + "&mes_tarjeta=" + txtMesTarjeta.getText().toString() + "&anio_tarjeta=" + txtAnioTarjeta.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_agregar_pago_tarjeta.php?pais="+ URLEncoder.encode(txtPais.getText().toString()) + "&estado=" + URLEncoder.encode(txtEstado.getText().toString()) + "&codigo_postal=" + URLEncoder.encode(txtCodigoPostal.getText().toString()) + "&nombre_tarjeta=" + URLEncoder.encode(txtNombreTarjeta.getText().toString()) + "&numero_tarjeta=" + URLEncoder.encode(txtNumeroTarjeta.getText().toString()) + "&cantidad_pago=" + URLEncoder.encode(txtCantidadPago.getText().toString()) + "&email=" + URLEncoder.encode(txtEmail.getText().toString()) + "&cvv_tarjeta=" + URLEncoder.encode(txtCvvTarjeta.getText().toString()) + "&mes_tarjeta=" + URLEncoder.encode(txtMesTarjeta.getText().toString()) + "&anio_tarjeta=" + URLEncoder.encode(txtAnioTarjeta.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             //new Agregar_servicio.RetrieveFeedTask().execute();
             new Anuncios_tarjeta.RetrieveFeedTask().execute();
         }

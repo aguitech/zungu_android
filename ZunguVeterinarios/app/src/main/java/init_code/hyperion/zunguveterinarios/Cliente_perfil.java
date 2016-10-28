@@ -30,10 +30,13 @@ public class Cliente_perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cliente_perfil);
 
-        _urlGet = "http://hyperion.init-code.com/zungu/app/vt_cliente_solicitar_pago.php?id_editar=1";
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
+
+        _urlGet = "http://hyperion.init-code.com/zungu/app/vt_cliente_solicitar_pago.php?id_editar=" + String.valueOf(valueID);
         new Cliente_perfil.RetrieveFeedTaskGet().execute();
 
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        //sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
     private void showMsg(CharSequence text) {
         Context context = getApplicationContext();

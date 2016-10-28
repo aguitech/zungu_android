@@ -18,6 +18,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Editar_producto extends AppCompatActivity {
 
@@ -52,7 +53,8 @@ public class Editar_producto extends AppCompatActivity {
         EditText txtPrecioVenta = (EditText) findViewById(R.id.txtPrecioVenta);
         EditText txtDescripcionProducto = (EditText) findViewById(R.id.txtDescripcionProducto);
 
-
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         //if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
@@ -62,7 +64,7 @@ public class Editar_producto extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
 
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
-            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_producto.php?id_editar=1&nombre=" + txtNombreProducto.getText().toString() + "&numero_unidades=" + txtNumeroUnidades.getText().toString() + "&precio_compra=" + txtPrecioCompra.getText().toString() + "&precio_venta=" + txtPrecioVenta.getText().toString() + "&descripcion=" + txtDescripcionProducto.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_producto.php?id_editar=1&nombre=" + URLEncoder.encode(txtNombreProducto.getText().toString()) + "&numero_unidades=" + URLEncoder.encode(txtNumeroUnidades.getText().toString()) + "&precio_compra=" + URLEncoder.encode(txtPrecioCompra.getText().toString()) + "&precio_venta=" + URLEncoder.encode(txtPrecioVenta.getText().toString()) + "&descripcion=" + URLEncoder.encode(txtDescripcionProducto.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             new Editar_producto.RetrieveFeedTask().execute();
         }
 

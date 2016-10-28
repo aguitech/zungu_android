@@ -18,6 +18,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class Editar_establecimiento extends AppCompatActivity {
 
@@ -32,10 +33,13 @@ public class Editar_establecimiento extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_establecimiento);
 
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
+
         _urlEditar = "http://hyperion.init-code.com/zungu/app/vt_editar_establecimiento.php?id_editar=1";
         new Editar_establecimiento.RetrieveFeedTaskEdit().execute();
 
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        //sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
     }
     public void editarEstablecimiento(View view) {
         /*
@@ -46,6 +50,10 @@ public class Editar_establecimiento extends AppCompatActivity {
 
         EditText txtNombre = (EditText) findViewById(R.id.txtNombre);
         EditText txtDireccion = (EditText) findViewById(R.id.txtDireccion);
+
+
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int valueID = sharedpreferences.getInt("idu", 0);
 
         //showMsg(txtNombre.getText().toString());
         //showMsg(txtDireccion.getText().toString());
@@ -58,7 +66,7 @@ public class Editar_establecimiento extends AppCompatActivity {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
 
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
-            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_establecimiento.php?id_editar=1&nombre=" + txtNombre.getText().toString() + "&direccion=" + txtDireccion.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_editar_establecimiento.php?id_editar=1&nombre=" + URLEncoder.encode(txtNombre.getText().toString()) + "&direccion=" + URLEncoder.encode(txtDireccion.getText().toString()) + "&id_veterinario=" + String.valueOf(valueID);
             new Editar_establecimiento.RetrieveFeedTask().execute();
         }
 
