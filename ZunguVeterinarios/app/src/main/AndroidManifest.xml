@@ -101,7 +101,6 @@
             android:name=".Cuenta_suscripcion"
             android:screenOrientation="portrait" />
         <activity android:name=".Cambiar_contrasena" />
-<<<<<<< HEAD
         <activity android:name=".Eliminar_cuenta" />
         <activity android:name=".Politicas_de_privacidad" />
         <activity android:name=".Anuncios" />
@@ -110,37 +109,12 @@
         <activity android:name=".Metodos_de_pago" />
         <activity android:name=".Anuncios_activos" />
         <activity android:name=".Citas" />
-        <activity android:name=".Citas_calendario"></activity>
-=======
-        <activity
-            android:name=".Eliminar_cuenta"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Politicas_de_privacidad"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Servicio"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Clientes"
-            android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".Anuncios"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Promocionar_perfil"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Pormocionar_producto"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Metodos_de_pago"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Anuncios_activos"
-            android:screenOrientation="portrait" />
-        <activity android:name=".Menu"></activity>
->>>>>>> fe7a871ced8b5958d11ae8f84c2d0c093bc9439a
+        <activity android:name=".Citas_calendario" />
+        <activity android:name=".Citas_solicitudes" />
+        <activity android:name=".Home" />
+        <activity android:name=".Tienda" />
+        <activity android:name=".Inventario" />
+        <activity android:name=".Gastos"></activity>
     </application>
 
 </manifest>
