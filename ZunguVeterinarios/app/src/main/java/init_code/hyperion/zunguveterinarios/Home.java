@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void goPerfil(View v){
-        Intent i = new Intent(Home.this, Principal.class);
+        Intent i = new Intent(Home.this, Cuenta.class);
         startActivity(i);
     }
 
