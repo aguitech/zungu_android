@@ -116,13 +116,16 @@ public class Login extends AppCompatActivity {
                     } else {
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putInt(idu, ID);
-                        editor.putString(nombre, NOMBRE);
+                        editor.putString(nombre, NOMBRE.toString());
+                        Log.d("nombre",NOMBRE.toString());
                         editor.commit();
-                        int value = sharedpreferences.getInt("idu", 0);
-                        Log.i("IDU", Integer.toString(value));
+                        //int value = sharedpreferences.getInt("idu", 0);
+                        String value = sharedpreferences.getString("nombre", "");
+                        Log.i("preferences", "va");
+                        Log.i("IDU", value);
 
                         text = "Bienvenido a Zungu veterinarios";
-                        Intent i = new Intent(Login.this, Principal.class);
+                        Intent i = new Intent(Login.this, Menu.class);
 
                         startActivity(i);
                         finish();

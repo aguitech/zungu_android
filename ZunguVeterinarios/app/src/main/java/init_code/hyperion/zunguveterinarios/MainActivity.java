@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                //Intent i = new Intent(MainActivity.this, SlideUno.class);
+                Intent i = new Intent(MainActivity.this, SlideUno.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
 
