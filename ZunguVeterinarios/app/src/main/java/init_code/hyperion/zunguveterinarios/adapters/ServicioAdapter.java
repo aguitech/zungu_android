@@ -23,6 +23,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import init_code.hyperion.zunguveterinarios.Editar_servicio;
 import init_code.hyperion.zunguveterinarios.Mascotas;
 import init_code.hyperion.zunguveterinarios.R;
 import init_code.hyperion.zunguveterinarios.Servicio;
@@ -103,6 +104,11 @@ public class ServicioAdapter extends BaseAdapter {
 
         holder.imgDetalle.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
+                //Intent i = new Intent(); 
+                Intent i = new Intent(context, Editar_servicio.class);
+                i.putExtra("id_servicio", _listaImgMascotas.get(position));
+                context.startActivity(i);
+
                 Log.d("click", "detalle");
             }
         });

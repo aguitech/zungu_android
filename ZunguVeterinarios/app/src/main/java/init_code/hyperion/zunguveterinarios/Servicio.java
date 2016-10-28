@@ -39,6 +39,7 @@ public class Servicio extends AppCompatActivity {
     public static ArrayList<String> listaImgMascotas = new ArrayList<String>();
     public static ArrayList<String> listaNombreCliente = new ArrayList<String>();
     public static ArrayList<String> listaNombreMascota = new ArrayList<String>();
+
     public Servicio mActivity = this;
     public ServicioAdapter _mascotasAdapter;
 
