@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -58,7 +59,7 @@ public class Agregar_servicio extends AppCompatActivity {
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
         if(txtNombreServicio.getText().toString().length() < 1 || txtCostoServicio.getText().toString().length() < 1){
-            showMsg("Usuario o password no válido.");
+            showMsg("Introduce los valores.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             /**
@@ -120,6 +121,10 @@ public class Agregar_servicio extends AppCompatActivity {
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
 
+                showMsg("Se ha agregado el servicio.");
+
+                Intent i = new Intent(Agregar_servicio.this, Servicio.class);
+                startActivity(i);
                 /*
                 try {
 

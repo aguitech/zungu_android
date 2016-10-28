@@ -328,7 +328,8 @@
                             android:background="@drawable/border_verde_radius"
                             android:layout_height="match_parent"
                             android:layout_weight="0.35"
-                            />
+                            android:id="@+id/btnCancelar"
+                            android:onClick="cancelarPago" />
 
                     </LinearLayout>
 

@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -28,6 +29,11 @@ public class Anuncios_paypal extends AppCompatActivity {
         setContentView(R.layout.activity_anuncios_paypal);
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+    }
+
+    public void cancelarPago(View view) {
+        Intent i = new Intent(Anuncios_paypal.this, Metodos_de_pago.class);
+        startActivity(i);
     }
 
     public void agregarPagoPaypal(View view) {

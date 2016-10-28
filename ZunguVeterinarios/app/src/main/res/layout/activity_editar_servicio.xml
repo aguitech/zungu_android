@@ -372,7 +372,7 @@
                             android:layout_height="wrap_content">
                             <Button
                                 android:layout_width="match_parent"
-                                android:text="Agregar"
+                                android:text="Editar"
                                 android:textColor="@color/gris_fuerte"
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
@@ -394,7 +394,8 @@
                                 android:textAllCaps="false"
                                 android:background="@drawable/border_verde_radius"
                                 android:layout_height="30dp"
-                                android:id="@+id/btnCancelar" />
+                                android:id="@+id/btnCancelar"
+                                android:onClick="cancelarServicio"/>
                         </LinearLayout>
                     </LinearLayout>
 

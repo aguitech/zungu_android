@@ -362,7 +362,8 @@
                                 android:textColor="@color/gris_claro"
                                 android:background="@android:color/transparent"
                                 android:text="+ Agregar cliente"
-                                android:layout_height="match_parent" />
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnAgregarCliente" />
                         </LinearLayout>
                     </LinearLayout>
 

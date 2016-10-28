@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
 
                 //Intent i = new Intent(MainActivity.this, Servicio.class);
+                //Intent i = new Intent(MainActivity.this, Mascotas.class);
+                //Intent i = new Intent(MainActivity.this, Metodos_de_pago.class);
                 //Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Editar_producto.class);
@@ -32,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 //Intent i = new Intent(MainActivity.this, Cambiar_contrasena.class);
                 //Intent i = new Intent(MainActivity.this, Eliminar_cuenta.class);
                 //Intent i = new Intent(MainActivity.this, Cambiar_contrasena.class);
-                //Intent i = new Intent(MainActivity.this, Preview_establecimiento.class);
+                //Intent innt = new Intent(MainActivity.this, Servicio.class);
+                //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 startActivity(i);
 
