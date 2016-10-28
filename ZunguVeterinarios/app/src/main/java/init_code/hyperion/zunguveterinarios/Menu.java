@@ -71,7 +71,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goFormas(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Cuenta_pago.class);
         startActivity(i);
     }
 
