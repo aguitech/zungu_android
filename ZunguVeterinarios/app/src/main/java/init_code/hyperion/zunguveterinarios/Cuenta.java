@@ -29,9 +29,19 @@ public class Cuenta extends AppCompatActivity {
         startActivity(i);
     }
     public void irContarleAmigo(View view) {
-        /*
-        Intent i = new Intent(Cuenta.this, Servicio.class);
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Promociona tu establecimiento, consigue más clientes con Zungu App");
+        sendIntent.setType("text/plain");
+        startActivity(Intent.createChooser(sendIntent, "Zungu Veterinarios"));
+    }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Cuenta.this, Menu.class);
         startActivity(i);
-        */
+    }
+
+    public void goBack(View v){
+        finish();
     }
 }

@@ -38,6 +38,12 @@ public class Eliminar_cuenta extends AppCompatActivity {
         Intent i = new Intent(Eliminar_cuenta.this, Cuenta.class);
         startActivity(i);
     }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Eliminar_cuenta.this, Menu.class);
+        startActivity(i);
+    }
+
     public void eliminarCuenta(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);

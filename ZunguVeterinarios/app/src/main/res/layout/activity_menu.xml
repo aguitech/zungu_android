@@ -37,7 +37,7 @@ tools:context="init_code.hyperion.zunguveterinarios.Menu">
             android:gravity="center"
             android:layout_height="60dp">
             <TextView
-                android:text="Nombre Veterinario"
+                android:text=""
                 android:textSize="15dp"
                 android:textColor="@color/blanco"
                 android:layout_width="wrap_content"

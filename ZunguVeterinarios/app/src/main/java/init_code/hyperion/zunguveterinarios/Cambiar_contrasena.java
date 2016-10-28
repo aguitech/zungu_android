@@ -43,6 +43,16 @@ public class Cambiar_contrasena extends AppCompatActivity {
         Intent i = new Intent(Cambiar_contrasena.this, Cuenta.class);
         startActivity(i);
     }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Cambiar_contrasena.this, Menu.class);
+        startActivity(i);
+    }
+
+    public void goBack(View v){
+        finish();
+    }
+
     public void cambiarContrasenia(View view) {
         /*
         EditText txtEmail = (EditText)findViewById(R.id.txtEmail);
@@ -54,7 +64,7 @@ public class Cambiar_contrasena extends AppCompatActivity {
 
 
         //if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
-        if(txtContrasenia.getText().toString().length() < 1){
+        if(txtContrasenia.getText().toString().length() < 3){
             showMsg("Introduce las contraseñas.");
         } else {
             //_url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();

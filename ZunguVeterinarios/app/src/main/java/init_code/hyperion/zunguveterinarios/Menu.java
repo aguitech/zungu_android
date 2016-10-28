@@ -18,12 +18,12 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        String value = sharedpreferences.getString("nombre", " ");
+        //sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        //String value = sharedpreferences.getString("nombre", " ");
         //int value = sharedpreferences.getInt("idu", 0);
 
-        TextView txtNombre = (TextView)findViewById(R.id.txtNombre);
-        txtNombre.setText(String.valueOf(value));
+        //TextView txtNombre = (TextView)findViewById(R.id.txtNombre);
+        //txtNombre.setText(String.valueOf(value));
     }
 
     public void cerrar(View v){

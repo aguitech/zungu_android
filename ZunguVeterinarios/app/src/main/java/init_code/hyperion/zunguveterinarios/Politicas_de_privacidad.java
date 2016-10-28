@@ -17,4 +17,9 @@ public class Politicas_de_privacidad extends AppCompatActivity {
         Intent i = new Intent(Politicas_de_privacidad.this, Cuenta.class);
         startActivity(i);
     }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Politicas_de_privacidad.this, Menu.class);
+        startActivity(i);
+    }
 }
