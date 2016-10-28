@@ -101,7 +101,6 @@
             android:screenOrientation="portrait" />
         
         <activity android:name=".Cambiar_contrasena" />
-        <activity android:name=".Anuncios" />
 
 
         <activity android:name=".Citas" />
@@ -134,12 +133,12 @@
             android:name=".Anuncios_activos"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
         <activity android:name=".Citas_solicitudes" />
         <activity android:name=".Home" />
         <activity android:name=".Tienda" />
         <activity android:name=".Inventario" />
-        <activity android:name=".Gastos"></activity>
+        <activity android:name=".Gastos" />
     </application>
 
 </manifest>
