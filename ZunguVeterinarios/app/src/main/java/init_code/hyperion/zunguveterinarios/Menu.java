@@ -31,7 +31,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goHome(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Home.class);
         startActivity(i);
     }
 
@@ -46,12 +46,12 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goTienda(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Tienda.class);
         startActivity(i);
     }
 
     public void goInventario(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Inventario.class);
         startActivity(i);
     }
 
@@ -66,7 +66,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goGastos(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Gastos.class);
         startActivity(i);
     }
 

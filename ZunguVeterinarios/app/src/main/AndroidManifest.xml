@@ -101,10 +101,8 @@
             android:screenOrientation="portrait" />
         
         <activity android:name=".Cambiar_contrasena" />
-        <activity android:name=".Anuncios" />
 
-
-        <activity android:name=".Citas" />
+        <activity android:name=".Citas" android:screenOrientation="portrait"/>
         <activity android:name=".Citas_calendario"></activity>
         <activity
             android:name=".Eliminar_cuenta"
@@ -135,13 +133,11 @@
             android:screenOrientation="portrait" />
 
         <activity android:name=".Menu"></activity>
-        <activity android:name=".Citas" />
-        <activity android:name=".Citas_calendario" />
-        <activity android:name=".Citas_solicitudes" />
-        <activity android:name=".Home" />
-        <activity android:name=".Tienda" />
-        <activity android:name=".Inventario" />
-        <activity android:name=".Gastos"></activity>
+        <activity android:name=".Citas_solicitudes" android:screenOrientation="portrait"/>
+        <activity android:name=".Home" android:screenOrientation="portrait"/>
+        <activity android:name=".Tienda" android:screenOrientation="portrait"/>
+        <activity android:name=".Inventario" android:screenOrientation="portrait"/>
+        <activity android:name=".Gastos" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
