@@ -16,4 +16,9 @@ public class Cuenta_suscripcion extends AppCompatActivity {
         Intent i = new Intent(Cuenta_suscripcion.this, Cuenta.class);
         startActivity(i);
     }
+
+    public void goMenu(View v){
+        Intent i = new Intent(Cuenta_suscripcion.this, Menu.class);
+        startActivity(i);
+    }
 }

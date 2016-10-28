@@ -125,7 +125,7 @@ public class Login extends AppCompatActivity {
                         Log.i("IDU", value);
 
                         text = "Bienvenido a Zungu veterinarios";
-                        Intent i = new Intent(Login.this, Menu.class);
+                        Intent i = new Intent(Login.this, Home.class);
 
                         startActivity(i);
                         finish();
