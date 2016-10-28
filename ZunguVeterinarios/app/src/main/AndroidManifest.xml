@@ -137,7 +137,13 @@
         <activity android:name=".Inventario" />
         <activity android:name=".Gastos" />
         <activity android:name=".Cuenta_pago" />
-        <activity android:name=".Estadisticas"></activity>
+        <activity android:name=".Estadisticas" />
+        <activity android:name=".Agregar_gastos" />
+        <activity android:name=".Cuenta_activa" />
+        <activity android:name=".Formas_de_pago" />
+        <activity android:name=".Ingresos_egresos" />
+        <activity android:name=".Agregar_cita" />
+        <activity android:name=".Cita_generada_exitosamente"></activity>
     </application>
 
 </manifest>

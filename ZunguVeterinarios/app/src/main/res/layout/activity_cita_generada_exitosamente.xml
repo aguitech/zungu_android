@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_citas"
+    android:id="@+id/activity_mascotas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondozungu"
-    tools:context="init_code.hyperion.zunguveterinarios.Citas_solicitudes">
+    android:background="@drawable/fondo"
+    tools:context="init_code.hyperion.zunguveterinarios.Cita_generada_exitosamente">
 
     <!--Comienza el contenedor padre-->
     <LinearLayout
@@ -71,12 +71,12 @@
                 android:gravity="center"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:src="@drawable/citas"
+                    android:src="@drawable/mascotas"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="Citas"
+                    android:text="Mascotas"
                     android:gravity="center"
                     android:textColor="@color/blanco"
                     android:textSize="15dp"
@@ -91,141 +91,172 @@
             </LinearLayout>
         </LinearLayout>
         <!--Termina contenedor del header-->
-
-
-        <!--Contenido Hijo-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:weightSum="1"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:layout_height="30dp">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.40"
-                android:gravity="center"
-                android:layout_height="match_parent">
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="Hoy"
-                    android:textSize="12dp"
-                    android:textColor="@color/blanco"
-                    android:background="@drawable/tab_negro"
-                    android:textAllCaps="false"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.40"
-                android:gravity="center"
-                android:layout_height="match_parent">
-                <Button
-                    android:layout_width="match_parent"
-                    android:text="Solicitudes"
-                    android:textSize="12dp"
-                    android:textColor="@color/obscuro"
-                    android:background="@drawable/tab_border_obscuro"
-                    android:textAllCaps="false"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:weightSum="1"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="0.90"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textColor="@color/verde_zungu"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:text="20 JUN 2016"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:weightSum="1"
-            android:layout_marginTop="2dp"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight=".90"
-                android:background="@color/verde_zungu"
-                android:layout_height="1dp"></LinearLayout>
-        </LinearLayout>
-        <!--Termina Contenido Hijo-->
-
     </LinearLayout>
     <!--Termina contenedor padre-->
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_above="@+id/btn_calendario"
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_foot"
         android:layout_below="@+id/header"
+        android:gravity="center"
         android:layout_height="match_parent">
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.60"
+                android:gravity="center"
                 android:layout_height="wrap_content">
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:weightSum="1"
                     android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="0.90"
-                        android:layout_height="wrap_content">
-                        <ListView
-                            android:id="@+id/list_citas_solicitudes"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></ListView>
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_fuerte"
+                    android:textSize="15dp"
+                    android:text="La cita se ha agendado exitosamente."
+                    android:layout_height="wrap_content" />
             </LinearLayout>
-        </RelativeLayout>
-    </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/calendar_"
+                    android:textColor="@color/gris_fuerte"
+                    android:textSize="15dp"
+                    android:text="20 / Julio / 2016  -  16:30 hrs"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/gris_fuerte"
+                    android:textSize="15dp"
+                    android:text="Motivo: Servicio de estética"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_fuerte"
+                    android:textSize="18dp"
+                    android:text="Total a pagar: $450"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/gris_fuerte"
+                    android:textSize="12dp"
+                    android:text="Se enviará una solicitud de confirmación a “cliente”, se te enviará una notificación cuando haya sido aceptada."
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 
     <LinearLayout
         android:layout_alignParentBottom="true"
-        android:id="@+id/btn_calendario"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:weightSum="1"
-        android:gravity="center"
+        android:id="@+id/btn_foot"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.40"
+            android:layout_weight="0.35"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
             android:layout_height="wrap_content">
             <Button
                 android:layout_width="match_parent"
-                android:background="@drawable/border_verde_radius"
-                android:textColor="@color/obscuro"
-                android:text="Ver calendario"
-                android:textSize="12dp"
+                android:text="Confirmar"
+                android:textColor="@color/gris_fuerte"
                 android:textAllCaps="false"
-                android:layout_height="25dp" />
+                android:background="@drawable/border_verde_radius"
+                android:layout_height="30dp"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.35"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:text="Cancelar"
+                android:textColor="@color/gris_fuerte"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:background="@drawable/border_verde_radius"
+                android:layout_height="30dp" />
         </LinearLayout>
     </LinearLayout>
 
