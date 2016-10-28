@@ -211,7 +211,7 @@
                             android:inputType="text"
                             android:textSize="12dp"
                             android:paddingLeft="10dp"
-                            android:id="@+id/txtNombre" />
+                            android:id="@+id/txtConcepto" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -244,7 +244,7 @@
                                 android:hint="$"
                                 android:textSize="12dp"
                                 android:paddingLeft="10dp"
-                                android:id="@+id/txtDireccion" />
+                                android:id="@+id/txtCantidad" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -278,12 +278,12 @@
                 android:text="Agregar"
                 android:textAllCaps="false"
                 android:textSize="12dp"
-                android:onClick="goAgregar"
+                android:onClick="agregarGasto"
                 android:paddingLeft="10dp"
                 android:textColor="@color/obscuro"
                 android:background="@drawable/border_verde_radius"
                 android:layout_height="30dp"
-                />
+                android:id="@+id/btnAgregar" />
         </LinearLayout>
 
         <LinearLayout
@@ -309,7 +309,8 @@
                 android:paddingLeft="10dp"
                 android:textColor="@color/obscuro"
                 android:background="@drawable/border_verde_radius"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:id="@+id/btnCancelar" />
         </LinearLayout>
 
     </LinearLayout>
