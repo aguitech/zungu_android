@@ -29,6 +29,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/menu"
+                    android:onClick="goMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -61,6 +62,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/back"
+                    android:onClick="goBack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -112,7 +114,9 @@
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/derecha_"
             android:paddingRight="10dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:id="@+id/btnSuscripcion"
+            android:onClick="irSuscripcion" />
 
         <Button
             android:layout_width="match_parent"
@@ -125,7 +129,9 @@
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/derecha_"
             android:paddingRight="10dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:id="@+id/btnCambiarContrasenia"
+            android:onClick="irCambiarContrasenia" />
 
         <Button
             android:layout_width="match_parent"
@@ -138,7 +144,9 @@
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/derecha_"
             android:paddingRight="10dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:id="@+id/btnEliminarCuenta"
+            android:onClick="irEliminarCuenta" />
 
         <Button
             android:layout_width="match_parent"
@@ -151,7 +159,9 @@
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/derecha_"
             android:paddingRight="10dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:id="@+id/btnPoliticaPrivacidad"
+            android:onClick="irPoliticaPrivacidad" />
 
         <Button
             android:layout_width="match_parent"
@@ -164,7 +174,9 @@
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/derecha_"
             android:paddingRight="10dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:id="@+id/btnContarleAmigo"
+            android:onClick="irContarleAmigo" />
 
     </LinearLayout>
 

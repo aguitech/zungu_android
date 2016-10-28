@@ -30,6 +30,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/menu"
+                    android:onClick="goMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -63,7 +64,9 @@
                 <ImageView
                     android:src="@drawable/back"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRegresar"
+                    android:onClick="irAnterior" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -157,6 +160,7 @@
                                 android:layout_width="match_parent"
                                 android:text="Política de privacidad"
                                 android:textStyle="bold"
+                                android:visibility="gone"
                                 android:textColor="@color/gris_fuerte"
                                 android:textSize="15dp"
                                 android:layout_height="wrap_content" />

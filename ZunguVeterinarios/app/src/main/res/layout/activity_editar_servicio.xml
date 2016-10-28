@@ -395,7 +395,7 @@
                                 android:background="@drawable/border_verde_radius"
                                 android:layout_height="30dp"
                                 android:id="@+id/btnCancelar"
-                                android:onClick="cancelarServicio"/>
+                                android:onClick="cancelarAccion"/>
                         </LinearLayout>
                     </LinearLayout>
 

@@ -16,13 +16,18 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+
+                //Intent i = new Intent(MainActivity.this, SlideUno.class);
+
                 Intent i = new Intent(MainActivity.this, SlideUno.class);
+                //Intent i = new Intent(MainActivity.this, Editar_establecimiento.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_servicio.class);
 
                 //Intent i = new Intent(MainActivity.this, Servicio.class);
                 //Intent i = new Intent(MainActivity.this, Mascotas.class);
                 //Intent i = new Intent(MainActivity.this, Metodos_de_pago.class);
+                //Intent i = new Intent(MainActivity.this, Cuenta.class);
                 //Intent i = new Intent(MainActivity.this, Anuncios_spei.class);
                 //Intent i = new Intent(MainActivity.this, Agregar_producto.class);
                 //Intent i = new Intent(MainActivity.this, Editar_producto.class);

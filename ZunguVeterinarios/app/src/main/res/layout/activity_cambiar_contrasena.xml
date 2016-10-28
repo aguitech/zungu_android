@@ -29,6 +29,7 @@
                 android:layout_height="match_parent">
                 <ImageView
                     android:src="@drawable/menu"
+                    android:onClick="goMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -58,11 +59,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.10"
                 android:gravity="center"
-                android:layout_height="match_parent">
+                android:onClick="goBack"
+                android:layout_height="match_parent"
+                android:id="@+id/btnRegresar">
                 <ImageView
                     android:src="@drawable/back"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAnterior"
+                    android:onClick="irAnterior" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -253,7 +258,9 @@
                                     android:textColor="@color/blanco"
                                     android:textSize="12dp"
                                     android:background="@drawable/btn_negro_radius"
-                                    android:layout_height="wrap_content" />
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/btnCancelar"
+                                    android:onClick="cancelarAccion" />
                             </LinearLayout>
 
                         </LinearLayout>

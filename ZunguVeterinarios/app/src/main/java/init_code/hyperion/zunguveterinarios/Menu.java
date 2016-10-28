@@ -18,12 +18,11 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        String value = sharedpreferences.getString("nombre", " ");
+        //sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         //int value = sharedpreferences.getInt("idu", 0);
 
-        TextView txtNombre = (TextView)findViewById(R.id.txtNombre);
-        txtNombre.setText(String.valueOf(value));
+        //TextView txtNombre = (TextView)findViewById(R.id.txtNombre);
+        //txtNombre.setText(String.valueOf(value));
     }
 
     public void cerrar(View v){
@@ -31,7 +30,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goHome(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Home.class);
         startActivity(i);
     }
 
@@ -46,12 +45,12 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goTienda(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Tienda.class);
         startActivity(i);
     }
 
     public void goInventario(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Inventario.class);
         startActivity(i);
     }
 
@@ -66,7 +65,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goGastos(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Gastos.class);
         startActivity(i);
     }
 
