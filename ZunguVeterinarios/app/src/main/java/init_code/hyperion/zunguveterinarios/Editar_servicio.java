@@ -1,6 +1,7 @@
 package init_code.hyperion.zunguveterinarios;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -47,6 +48,10 @@ public class Editar_servicio extends AppCompatActivity {
 
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+    }
+    public void cancelarServicio(View view) {
+        Intent i = new Intent(Editar_servicio.this, Servicio.class);
+        startActivity(i);
     }
     public void editarServicio(View view) {
         /*
