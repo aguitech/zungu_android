@@ -37,40 +37,98 @@
         <activity
             android:name=".Registro"
             android:screenOrientation="portrait" />
-        <activity android:name=".Principal" />
-        <activity android:name=".Agregar_servicio" />
-        <activity android:name=".Anuncios_paypal" />
-        <activity android:name=".Anuncios_spei" />
-        <activity android:name=".Anuncios_tarjeta" />
-        <activity android:name=".Agregar_producto" />
-        <activity android:name=".Editar_producto" />
-        <activity android:name=".Editar_servicio" />
-        <activity android:name=".Cliente_perfil" />
-        <activity android:name=".Cliente_solicitar_pago" />
-        <activity android:name=".Mascotas"></activity>
-        <activity android:name=".Detalle_mascota" />
-        <activity android:name=".Adopcion" />
-        <activity android:name=".Adopcion_dos" />
-        <activity android:name=".Adopcion_imagenes" />
-        <activity android:name=".Agregar_ms_adopcion" />
-        <activity android:name=".Registrar_mascota" />
-        <activity android:name=".Editar_establecimiento" />
-        <activity android:name=".Preview_establecimiento" />
-        <activity android:name=".Cuenta" />
-        <activity android:name=".Cuenta_suscripcion" />
+        <activity
+            android:name=".Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Agregar_servicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anuncios_paypal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anuncios_spei"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anuncios_tarjeta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Agregar_producto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Editar_producto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Editar_servicio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cliente_perfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cliente_solicitar_pago"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mascotas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Detalle_mascota"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adopcion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adopcion_dos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Adopcion_imagenes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Agregar_ms_adopcion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registrar_mascota"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Editar_establecimiento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Preview_establecimiento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuenta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cuenta_suscripcion"
+            android:screenOrientation="portrait" />
         <activity android:name=".Cambiar_contrasena" />
-        <activity android:name=".Eliminar_cuenta" />
-        <activity android:name=".Politicas_de_privacidad" />
-        <activity android:name=".Servicio">
-        </activity>
-        <activity android:name=".Clientes">
-
-        </activity>
-        <activity android:name=".Anuncios" />
-        <activity android:name=".Promocionar_perfil" />
-        <activity android:name=".Pormocionar_producto" />
-        <activity android:name=".Metodos_de_pago" />
-        <activity android:name=".Anuncios_activos"></activity>
+        <activity
+            android:name=".Eliminar_cuenta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Politicas_de_privacidad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Servicio"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Clientes"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Anuncios"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Promocionar_perfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pormocionar_producto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Metodos_de_pago"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Anuncios_activos"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Menu"></activity>
     </application>
 
 </manifest>

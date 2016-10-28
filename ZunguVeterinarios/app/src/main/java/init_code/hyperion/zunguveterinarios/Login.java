@@ -24,6 +24,7 @@ public class Login extends AppCompatActivity {
 
     private String _url;
     public static final String idu = "idu";
+    public static final String nombre = "";
     SharedPreferences sharedpreferences;
     public static final String MyPREFERENCES = "MyPrefs" ;
 
@@ -52,7 +53,7 @@ public class Login extends AppCompatActivity {
         if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1){
             showMsg("Usuario o password no válido.");
         } else {
-            _url = "http://hyperion.init-code.com/zungu/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
+            _url = "http://hyperion.init-code.com/zungu/app/loginApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString();
             new RetrieveFeedTask().execute();
         }
     }
@@ -107,6 +108,7 @@ public class Login extends AppCompatActivity {
                 try {
                     JSONObject object = (JSONObject) new JSONTokener(response).nextValue();
                     int ID = object.getInt("id");
+                    String NOMBRE = object.getString("nombre");
                     CharSequence text;
 
                     if(ID == 0){
@@ -114,11 +116,16 @@ public class Login extends AppCompatActivity {
                     } else {
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putInt(idu, ID);
+                        editor.putString(nombre, NOMBRE);
                         editor.commit();
                         int value = sharedpreferences.getInt("idu", 0);
                         Log.i("IDU", Integer.toString(value));
 
                         text = "Bienvenido a Zungu veterinarios";
+                        Intent i = new Intent(Login.this, Principal.class);
+
+                        startActivity(i);
+                        finish();
                     }
 
                     Toast toast = Toast.makeText(context, text, duration);
