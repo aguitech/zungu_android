@@ -129,7 +129,7 @@ public class Registro extends AppCompatActivity {
         if(txtPass.getText().toString().length() < 1 || txtEmail.getText().toString().length() < 1 || txtNombre.getText().toString().length() < 1 || txtPerfil.getText().toString().equals("Tipo de perfil") || txtCategoria.getText().toString().equals("Categoria")){
             showMsg("Todos los datos son necesarios.");
         } else {
-            _url = "http://hyperion.init-code.com/zungu/registroApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString()  + "&nombre=" + URLEncoder.encode(txtNombre.getText().toString())  + "&categoria=" + URLEncoder.encode(txtCategoria.getText().toString())  + "&perfil=" + URLEncoder.encode(txtPerfil.getText().toString());
+            _url = "http://hyperion.init-code.com/zungu/app/registroApp.php?email="+ txtEmail.getText().toString() + "&password=" + txtPass.getText().toString()  + "&nombre=" + URLEncoder.encode(txtNombre.getText().toString())  + "&categoria=" + URLEncoder.encode(txtCategoria.getText().toString())  + "&perfil=" + URLEncoder.encode(txtPerfil.getText().toString());
             new Registro.RetrieveFeedTask().execute();
         }
     }
@@ -198,7 +198,7 @@ public class Registro extends AppCompatActivity {
                         Log.i("IDU", Integer.toString(value));
 
                         text = "Bienvenido a Zungu veterinarios";
-                        Intent i = new Intent(Registro.this, Principal.class);
+                        Intent i = new Intent(Registro.this, Home.class);
 
                         startActivity(i);
                         finish();
