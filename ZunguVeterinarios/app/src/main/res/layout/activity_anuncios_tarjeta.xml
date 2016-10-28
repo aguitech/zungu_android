@@ -372,7 +372,9 @@
                 android:textAllCaps="false"
                 android:textSize="12dp"
                 android:background="@drawable/border_verde_radius"
-                android:layout_height="30dp" />
+                android:layout_height="30dp"
+                android:id="@+id/btnCancelar"
+                android:onClick="cancelarPago" />
         </LinearLayout>
     </LinearLayout>
 
