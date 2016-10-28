@@ -75,8 +75,12 @@ public class Eliminar_cuenta extends AppCompatActivity {
                 //showMsg(txtRepetirContrasenia.getText().toString());
                 //showMsg("Las contraseñas coinciden.");
 
+            sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+            int valueID = sharedpreferences.getInt("idu", 0);
+
             //_url = "http://hyperion.init-code.com/zungu/app/vt_cambiar_contrasenia.php?contrasenia_actual="+ txtContraseniaActual.getText().toString() + "&nueva_contrasenia=" + txtNuevaContrasenia.getText().toString() + "&id_veterinario=1";
-            _url = "http://hyperion.init-code.com/zungu/app/vt_eliminar_cuenta.php?contrasenia="+ txtContrasenia.getText().toString() + "&id_veterinario=1";
+            //_url = "http://hyperion.init-code.com/zungu/app/vt_eliminar_cuenta.php?contrasenia="+ txtContrasenia.getText().toString() + "&id_veterinario=1";
+            _url = "http://hyperion.init-code.com/zungu/app/vt_eliminar_cuenta.php?contrasenia="+ txtContrasenia.getText().toString() + "&id_veterinario=" + String.valueOf(valueID);
             new Eliminar_cuenta.RetrieveFeedTask().execute();
 
 
