@@ -53,7 +53,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:textSize="10dp"
-                            android:text="22 de junio - 22 de julio"
+                            android:text="01 de octubre - 30 de octubre"
                             android:gravity="left|center"
                             android:layout_height="match_parent"
                             android:id="@+id/lblTelefono" />

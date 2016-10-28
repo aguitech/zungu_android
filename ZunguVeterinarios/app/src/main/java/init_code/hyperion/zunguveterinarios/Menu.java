@@ -55,7 +55,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void goEstadisticas(View v){
-        Intent i = new Intent(Menu.this, Servicio.class);
+        Intent i = new Intent(Menu.this, Estadisticas.class);
         startActivity(i);
     }
 
